@@ -1,0 +1,26 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+target 'repairManagement' do
+pod 'YTKNetwork'
+
+pod 'MJRefresh'
+
+pod 'SVProgressHUD'
+
+pod 'YYWebImage'
+
+pod 'YYModel'
+
+pod 'FlexLib'
+
+pod 'BEMCheckBox'
+
+pod 'DZNEmptyDataSet'
+
+pod 'TZImagePickerController'
+
+pod 'JSBadgeView'
+
+pod 'AxcAE_TabBar'
+end
+
