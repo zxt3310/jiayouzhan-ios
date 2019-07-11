@@ -43,22 +43,18 @@
 #define KIsBlankString(str)  [NSString isBlankString:str]
 #define Kstr(a) KIsBlankString(a)?@"":a
 
-#ifdef DEBUG
-
-#define TYSale_Api_domain @"http://180.76.128.198:8011"
-#else
-
-#define TYSale_Api_domain @"http://api.rankshop.ranknowcn.com"
-#endif
 
 /*接口域名*/
-//#define TYSale_Api_domain @"http://api.rankshop.ranknowcn.com"  // @"http://180.76.128.198:8011"
-#define TYSale_Api_url(a) [NSString stringWithFormat:@"%@/api/%@",TYSale_Api_domain,a]
-#define HOST_URL_STR @"api.rankshop.ranknowcn.com"
+#ifdef DEBUG
 
+#define RM_Api_domain @"http://gsj.dev.rsc.ranknowcn.com"
+#else
+
+#define RM_Api_domain @"http://gsj.dev.rsc.ranknowcn.com"
+#endif
 
 /* NSUserDefault */
-
+#define RMUserINFO @"userinfo"
 
 
 #ifdef DEBUG

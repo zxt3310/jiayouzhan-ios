@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "EngineerTabController.h"
+#import "stationTabController.h"
+#import "RMLoginViewController.h"
+#import <YTKNetwork.h>
 
 @interface AppDelegate ()
 
@@ -17,7 +20,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    stationTabController *stationTabVC = [[stationTabController alloc] init];
+    UINavigationController *stationNav = [[UINavigationController alloc] initWithRootViewController:stationTabVC];
+    RMLoginViewController *loginVC = [[RMLoginViewController alloc] init];
+    
+    [TYSaleStaticObj shareObj].stationVC = stationNav;
+    [TYSaleStaticObj shareObj].loginVC = loginVC;
+    
+    if([TYSaleCookieTool cookieWithName:@"token"]){
+        self.window.rootViewController = stationNav;
+    }else{
+        self.window.rootViewController = loginVC;
+    }
+    [YTKNetworkConfig sharedConfig].baseUrl = RM_Api_domain;
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

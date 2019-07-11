@@ -25,33 +25,33 @@
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-//    _bar = [[TYSPNaviBar alloc] initWithFlex:@"TYSPNaviBar"
-//                                       Frame:CGRectMake(0, 0, kScreenWidth, kNavBarAndStatusBarHeight)
-//                                       Owner:nil];
-//    [self.view addSubview:_bar];
-//
-//    __weak typeof(self) weakSelf = self;
-//    _bar.shouldPop = ^{
-//        if ([weakSelf respondsToSelector:@selector(shouldChangePop)]) {
-//            [weakSelf performSelector:@selector(shouldChangePop)];
-//        }else{
-//            [weakSelf shouldPop];
-//        }
-//    };
-//
-//    _bar.rightCall = ^{
-//        [weakSelf rightItemCall];
-//    };
+    _bar = [[TYSPNaviBar alloc] initWithFlex:@"TYSPNaviBar"
+                                       Frame:CGRectMake(0, 0, kScreenWidth, kNavBarAndStatusBarHeight)
+                                       Owner:nil];
+    [self.view addSubview:_bar];
+
+    __weak typeof(self) weakSelf = self;
+    _bar.shouldPop = ^{
+        if ([weakSelf respondsToSelector:@selector(shouldChangePop)]) {
+            [weakSelf performSelector:@selector(shouldChangePop)];
+        }else{
+            [weakSelf shouldPop];
+        }
+    };
+
+    _bar.rightCall = ^{
+        [weakSelf rightItemCall];
+    };
 }
 
 - (void)shouldPop{
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-//- (void)setTitle:(NSString *)title{
-//    _title = title;
-//    [_bar setTitle:title];
-//}
+- (void)setTitle:(NSString *)title{
+    _title = title;
+    [_bar setTitle:title];
+}
 
 - (void)rightItemCall{
     

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FlexBaseWithoutNaviViewController.h"
 
-@interface RMOrderListViewController : FlexBaseVC
+@interface RMOrderListViewController : FlexBaseWithoutNaviViewController
 
 @end
 

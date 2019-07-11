@@ -9,5 +9,8 @@
 #import "RMOrderListViewController.h"
 
 @implementation RMOrderListViewController
+- (void)viewDidLoad{
+    
+}
 
 @end

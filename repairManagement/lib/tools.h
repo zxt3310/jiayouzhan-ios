@@ -10,9 +10,20 @@
 #import <UIKit/UIKit.h>
 
 @interface TYSaleStaticObj : NSObject
+@property UINavigationController *stationVC;
+@property UINavigationController *engineerVC;
+@property UIViewController *loginVC;
 
 + (instancetype) shareObj;
 
+@end
+
+@interface RMUserInfo : NSObject <YYModel,NSCoding>
+@property NSString *mobile;
+@property NSString *name;
+
+- (void)save;
++ (instancetype)loadFromLocal;
 @end
 
 
