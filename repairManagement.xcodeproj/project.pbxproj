@@ -35,6 +35,11 @@
 		B784B9BC22D5B92600EAB7F5 /* repairManagementUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B784B9BB22D5B92600EAB7F5 /* repairManagementUITests.m */; };
 		B784B9CE22D5EFB800EAB7F5 /* EngineerTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = B784B9CD22D5EFB800EAB7F5 /* EngineerTabController.m */; };
 		B784B9D122D5EFFB00EAB7F5 /* stationTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = B784B9D022D5EFFB00EAB7F5 /* stationTabController.m */; };
+		B7CAD2DE22D82B050069FC67 /* RMOrderTable.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CAD2DD22D82B050069FC67 /* RMOrderTable.m */; };
+		B7CAD2E222D82B170069FC67 /* RMOrderCell.xml in Resources */ = {isa = PBXBuildFile; fileRef = B7CAD2E022D82B170069FC67 /* RMOrderCell.xml */; };
+		B7CAD2E322D82B170069FC67 /* RMOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CAD2E122D82B170069FC67 /* RMOrderCell.m */; };
+		B7CAD2E522D82C180069FC67 /* RMOrderTable.xml in Resources */ = {isa = PBXBuildFile; fileRef = B7CAD2E422D82C180069FC67 /* RMOrderTable.xml */; };
+		B7CAD2E922D82D2B0069FC67 /* RepairOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CAD2E822D82D2B0069FC67 /* RepairOrderModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +111,14 @@
 		B784B9CD22D5EFB800EAB7F5 /* EngineerTabController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EngineerTabController.m; sourceTree = "<group>"; };
 		B784B9CF22D5EFFB00EAB7F5 /* stationTabController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stationTabController.h; sourceTree = "<group>"; };
 		B784B9D022D5EFFB00EAB7F5 /* stationTabController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stationTabController.m; sourceTree = "<group>"; };
+		B7CAD2DC22D82B050069FC67 /* RMOrderTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMOrderTable.h; sourceTree = "<group>"; };
+		B7CAD2DD22D82B050069FC67 /* RMOrderTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMOrderTable.m; sourceTree = "<group>"; };
+		B7CAD2DF22D82B170069FC67 /* RMOrderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMOrderCell.h; sourceTree = "<group>"; };
+		B7CAD2E022D82B170069FC67 /* RMOrderCell.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RMOrderCell.xml; sourceTree = "<group>"; };
+		B7CAD2E122D82B170069FC67 /* RMOrderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMOrderCell.m; sourceTree = "<group>"; };
+		B7CAD2E422D82C180069FC67 /* RMOrderTable.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RMOrderTable.xml; sourceTree = "<group>"; };
+		B7CAD2E722D82D2B0069FC67 /* RepairOrderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepairOrderModel.h; sourceTree = "<group>"; };
+		B7CAD2E822D82D2B0069FC67 /* RepairOrderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepairOrderModel.m; sourceTree = "<group>"; };
 		EB5D220F24B5DA45ECEA4EB0 /* Pods-repairManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-repairManagement.debug.xcconfig"; path = "Target Support Files/Pods-repairManagement/Pods-repairManagement.debug.xcconfig"; sourceTree = "<group>"; };
 		FAD2AC4AFBF6EA0EC6FEBEE4 /* Pods-repairManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-repairManagement.release.xcconfig"; path = "Target Support Files/Pods-repairManagement/Pods-repairManagement.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +191,8 @@
 		B75ED95F22D6DE1300D305D9 /* OrderList */ = {
 			isa = PBXGroup;
 			children = (
+				B7CAD2E622D82CFB0069FC67 /* model */,
+				B7CAD2DB22D82A950069FC67 /* listTable */,
 				B75ED96522D6E9FA00D305D9 /* RMOrderListViewController.h */,
 				B75ED96622D6E9FA00D305D9 /* RMOrderListViewController.xml */,
 				B75ED96722D6E9FA00D305D9 /* RMOrderListViewController.m */,
@@ -388,6 +403,28 @@
 			path = EngineerClient;
 			sourceTree = "<group>";
 		};
+		B7CAD2DB22D82A950069FC67 /* listTable */ = {
+			isa = PBXGroup;
+			children = (
+				B7CAD2DC22D82B050069FC67 /* RMOrderTable.h */,
+				B7CAD2E422D82C180069FC67 /* RMOrderTable.xml */,
+				B7CAD2DD22D82B050069FC67 /* RMOrderTable.m */,
+				B7CAD2DF22D82B170069FC67 /* RMOrderCell.h */,
+				B7CAD2E022D82B170069FC67 /* RMOrderCell.xml */,
+				B7CAD2E122D82B170069FC67 /* RMOrderCell.m */,
+			);
+			path = listTable;
+			sourceTree = "<group>";
+		};
+		B7CAD2E622D82CFB0069FC67 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B7CAD2E722D82D2B0069FC67 /* RepairOrderModel.h */,
+				B7CAD2E822D82D2B0069FC67 /* RepairOrderModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -494,12 +531,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B75ED98F22D70CC800D305D9 /* RMUserViewController.xml in Resources */,
+				B7CAD2E222D82B170069FC67 /* RMOrderCell.xml in Resources */,
 				B75ED99622D70DFF00D305D9 /* RMLoginViewController.xml in Resources */,
 				B784B9A422D5B92600EAB7F5 /* LaunchScreen.storyboard in Resources */,
 				B784B9A122D5B92600EAB7F5 /* Assets.xcassets in Resources */,
 				B75ED98B22D70BCA00D305D9 /* TYSPNaviBar.xml in Resources */,
 				B75ED96822D6E9FA00D305D9 /* RMOrderListViewController.xml in Resources */,
 				B784B99C22D5B92200EAB7F5 /* Main.storyboard in Resources */,
+				B7CAD2E522D82C180069FC67 /* RMOrderTable.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,6 +606,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B75ED99A22D7256000D305D9 /* LoginViewModel.m in Sources */,
+				B7CAD2E322D82B170069FC67 /* RMOrderCell.m in Sources */,
 				B75ED99E22D72B2100D305D9 /* RMLoginRequest.m in Sources */,
 				B75ED98022D6EAC100D305D9 /* FlexBaseWithoutNaviViewController.m in Sources */,
 				B75ED96922D6E9FA00D305D9 /* RMOrderListViewController.m in Sources */,
@@ -578,8 +618,10 @@
 				B75ED99722D70DFF00D305D9 /* RMLoginViewController.m in Sources */,
 				B784B99922D5B92100EAB7F5 /* ViewController.m in Sources */,
 				B784B9CE22D5EFB800EAB7F5 /* EngineerTabController.m in Sources */,
+				B7CAD2E922D82D2B0069FC67 /* RepairOrderModel.m in Sources */,
 				B784B9A722D5B92600EAB7F5 /* main.m in Sources */,
 				B75ED97F22D6EAC100D305D9 /* FlexBasePresentViewController.m in Sources */,
+				B7CAD2DE22D82B050069FC67 /* RMOrderTable.m in Sources */,
 				B784B99622D5B92100EAB7F5 /* AppDelegate.m in Sources */,
 				B75ED98A22D70BCA00D305D9 /* TYSPNaviBar.m in Sources */,
 				B75ED98222D6EAC100D305D9 /* TYCommonRequest.m in Sources */,
