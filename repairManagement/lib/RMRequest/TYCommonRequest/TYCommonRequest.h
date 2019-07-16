@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TYCommonRequest : YTKRequest <YTKRequestDelegate>
 
+- (void)startRequest;
+
 @end
 
 NS_ASSUME_NONNULL_END

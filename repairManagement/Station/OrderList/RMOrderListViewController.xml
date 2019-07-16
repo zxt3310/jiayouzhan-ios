@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<UIView layout="flex:1" attr="bgColor:blue">
-    
+<UIView layout="flex:1" attr="">
+    <UIView layout="flexDirection:row,alignItems:center,padding:10,paddingBottom:20,paddingTop:20,justifyContent:space-between" attr="">
+        <UIView layout="" attr="">
+            <UILabel name="" layout="" attr="font:PingFangSC-Medium|22,color:#333333,text:维修记录"/>
+        </UIView>
+
+        <FlexTouchView onPress="" layout="width:90,height:30,justifyContent:center,alignItems:center" attr="bgColor:white">
+            <UILabel name="" layout="" attr="font:PingFangSC-Medium|14,color:#1c713d,text:维修申请"/>
+        </FlexTouchView>
+    </UIView>
+    <UIView name="_orderList" layout="flex:1" attr="">
+        
+    </UIView>
 </UIView>

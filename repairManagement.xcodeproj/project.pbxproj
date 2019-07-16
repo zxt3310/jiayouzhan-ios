@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9649157456A530A6364F1847 /* libPods-repairManagement.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D86A0EE8B99120A4D8A21F /* libPods-repairManagement.a */; };
+		B75940C922DDD17D00C19FF8 /* orderListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B75940C822DDD17D00C19FF8 /* orderListViewModel.m */; };
+		B75940CD22DDD24000C19FF8 /* RMOrderListReq.m in Sources */ = {isa = PBXBuildFile; fileRef = B75940CC22DDD24000C19FF8 /* RMOrderListReq.m */; };
+		B75940D122DDDFC800C19FF8 /* RMOrderDetailViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = B75940CF22DDDFC800C19FF8 /* RMOrderDetailViewController.xml */; };
+		B75940D222DDDFC800C19FF8 /* RMOrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B75940D022DDDFC800C19FF8 /* RMOrderDetailViewController.m */; };
 		B75ED96822D6E9FA00D305D9 /* RMOrderListViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = B75ED96622D6E9FA00D305D9 /* RMOrderListViewController.xml */; };
 		B75ED96922D6E9FA00D305D9 /* RMOrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B75ED96722D6E9FA00D305D9 /* RMOrderListViewController.m */; };
 		B75ED97E22D6EAC100D305D9 /* FlexBaseWithNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B75ED97322D6EAC100D305D9 /* FlexBaseWithNaviViewController.m */; };
@@ -61,6 +65,13 @@
 
 /* Begin PBXFileReference section */
 		54D86A0EE8B99120A4D8A21F /* libPods-repairManagement.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-repairManagement.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75940C722DDD17D00C19FF8 /* orderListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = orderListViewModel.h; sourceTree = "<group>"; };
+		B75940C822DDD17D00C19FF8 /* orderListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = orderListViewModel.m; sourceTree = "<group>"; };
+		B75940CB22DDD24000C19FF8 /* RMOrderListReq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMOrderListReq.h; sourceTree = "<group>"; };
+		B75940CC22DDD24000C19FF8 /* RMOrderListReq.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMOrderListReq.m; sourceTree = "<group>"; };
+		B75940CE22DDDFC800C19FF8 /* RMOrderDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMOrderDetailViewController.h; sourceTree = "<group>"; };
+		B75940CF22DDDFC800C19FF8 /* RMOrderDetailViewController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RMOrderDetailViewController.xml; sourceTree = "<group>"; };
+		B75940D022DDDFC800C19FF8 /* RMOrderDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMOrderDetailViewController.m; sourceTree = "<group>"; };
 		B75ED96522D6E9FA00D305D9 /* RMOrderListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMOrderListViewController.h; sourceTree = "<group>"; };
 		B75ED96622D6E9FA00D305D9 /* RMOrderListViewController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RMOrderListViewController.xml; sourceTree = "<group>"; };
 		B75ED96722D6E9FA00D305D9 /* RMOrderListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMOrderListViewController.m; sourceTree = "<group>"; };
@@ -168,6 +179,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B75940C622DDD15400C19FF8 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B75940C722DDD17D00C19FF8 /* orderListViewModel.h */,
+				B75940C822DDD17D00C19FF8 /* orderListViewModel.m */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		B75940CA22DDD21F00C19FF8 /* RMOrderListRequest */ = {
+			isa = PBXGroup;
+			children = (
+				B75940CB22DDD24000C19FF8 /* RMOrderListReq.h */,
+				B75940CC22DDD24000C19FF8 /* RMOrderListReq.m */,
+			);
+			path = RMOrderListRequest;
+			sourceTree = "<group>";
+		};
 		B75ED95D22D6DDD200D305D9 /* Engineer */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +220,7 @@
 		B75ED95F22D6DE1300D305D9 /* OrderList */ = {
 			isa = PBXGroup;
 			children = (
+				B75940C622DDD15400C19FF8 /* viewModel */,
 				B7CAD2E622D82CFB0069FC67 /* model */,
 				B7CAD2DB22D82A950069FC67 /* listTable */,
 				B75ED96522D6E9FA00D305D9 /* RMOrderListViewController.h */,
@@ -210,6 +240,9 @@
 		B75ED96122D6DE4500D305D9 /* OrderDetail */ = {
 			isa = PBXGroup;
 			children = (
+				B75940CE22DDDFC800C19FF8 /* RMOrderDetailViewController.h */,
+				B75940CF22DDDFC800C19FF8 /* RMOrderDetailViewController.xml */,
+				B75940D022DDDFC800C19FF8 /* RMOrderDetailViewController.m */,
 			);
 			path = OrderDetail;
 			sourceTree = "<group>";
@@ -286,6 +319,7 @@
 		B75ED99122D70D8C00D305D9 /* RMRequest */ = {
 			isa = PBXGroup;
 			children = (
+				B75940CA22DDD21F00C19FF8 /* RMOrderListRequest */,
 				B75ED99B22D72AFC00D305D9 /* RMLoginReqest */,
 				B75ED97722D6EAC100D305D9 /* TYCommonRequest */,
 			);
@@ -537,6 +571,7 @@
 				B784B9A122D5B92600EAB7F5 /* Assets.xcassets in Resources */,
 				B75ED98B22D70BCA00D305D9 /* TYSPNaviBar.xml in Resources */,
 				B75ED96822D6E9FA00D305D9 /* RMOrderListViewController.xml in Resources */,
+				B75940D122DDDFC800C19FF8 /* RMOrderDetailViewController.xml in Resources */,
 				B784B99C22D5B92200EAB7F5 /* Main.storyboard in Resources */,
 				B7CAD2E522D82C180069FC67 /* RMOrderTable.xml in Resources */,
 			);
@@ -608,15 +643,18 @@
 				B75ED99A22D7256000D305D9 /* LoginViewModel.m in Sources */,
 				B7CAD2E322D82B170069FC67 /* RMOrderCell.m in Sources */,
 				B75ED99E22D72B2100D305D9 /* RMLoginRequest.m in Sources */,
+				B75940C922DDD17D00C19FF8 /* orderListViewModel.m in Sources */,
 				B75ED98022D6EAC100D305D9 /* FlexBaseWithoutNaviViewController.m in Sources */,
 				B75ED96922D6E9FA00D305D9 /* RMOrderListViewController.m in Sources */,
 				B75ED99022D70CC800D305D9 /* RMUserViewController.m in Sources */,
 				B784B9D122D5EFFB00EAB7F5 /* stationTabController.m in Sources */,
+				B75940CD22DDD24000C19FF8 /* RMOrderListReq.m in Sources */,
 				B75ED98122D6EAC100D305D9 /* tools.m in Sources */,
 				B784B99F22D5B92200EAB7F5 /* repairManagement.xcdatamodeld in Sources */,
 				B75ED97E22D6EAC100D305D9 /* FlexBaseWithNaviViewController.m in Sources */,
 				B75ED99722D70DFF00D305D9 /* RMLoginViewController.m in Sources */,
 				B784B99922D5B92100EAB7F5 /* ViewController.m in Sources */,
+				B75940D222DDDFC800C19FF8 /* RMOrderDetailViewController.m in Sources */,
 				B784B9CE22D5EFB800EAB7F5 /* EngineerTabController.m in Sources */,
 				B7CAD2E922D82D2B0069FC67 /* RepairOrderModel.m in Sources */,
 				B784B9A722D5B92600EAB7F5 /* main.m in Sources */,

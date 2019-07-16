@@ -1,4 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<UIView layout="flex:1" attr="bgColor:white">
-    
+<UIView layout="padding:10,paddingBottom:0" attr="bgColor:#f2f7f8">
+    <UIView layout="padding:15" attr="borderWidth:1,borderColor:#e1e9ea,bgColor:white">
+        <UIView layout="flexDirection:row,alignItems:center,justifyContent:space-between" attr="">
+        <UIView layout="flexDirection:row" attr="">
+            <UIImageView layout="width:22,height:22" attr="source:dot"/>
+            <UILabel name="_orderIdLb" layout="marginLeft:10" attr="font:PingFangSC-Medium|14,color:#333333,text:"/>
+        </UIView>
+            <UILabel name="_statusLb" layout="flexDirection:row-reverse" attr="font:PingFangSC-Regular|14,color:#333333,text:状态"/>
+            <UIView name="_rateView" layout="paddingLeft:15,paddingRight:15,paddingTop:5,paddingBottom:5" attr="hidden:true,bgColor:#fec957">
+                <UILabel name="_rateLb" layout="" attr="font:PingFangSC-Regular|14,color:#333333,text:待评价"/>
+            </UIView>
+        </UIView>
+
+        <UIView layout="flexDirection:row,flex:1,marginTop:5" attr="">
+            <UILabel name="" layout="width:20%" attr="font:PingFangSC-Regular|14,textAlign:center,color:#333333,text:故障项目"/>
+            <UILabel name="_itemLb" layout="width:75%" attr="font:PingFangSC-Regular|14,color:#333333,text:"/>
+        </UIView>
+
+        <UIView layout="flexDirection:row,flex:1,marginTop:5" attr="">
+            <UILabel name="" layout="width:20%,alignSelf:flex-start" attr="font:PingFangSC-Regular|14,textAlign:center,color:#333333,text:故障描述"/>
+            <UILabel name="_despLb" layout="width:75%" attr="font:PingFangSC-Regular|14,linesNum:0,color:#333333,text:"/>
+        </UIView>
+
+        <UIView layout="flexDirection:row,flex:1,marginTop:5" attr="">
+            <UILabel name="" layout="width:20%" attr="font:PingFangSC-Regular|14,textAlign:center,color:#333333,text:加 油 站"/>
+            <UILabel name="_gasLb" layout="width:75%" attr="font:PingFangSC-Regular|14,color:#333333,text:"/>
+        </UIView>
+
+        <UIView layout="flexDirection:row,flex:1,marginTop:5" attr="">
+            <UILabel name="" layout="width:20%" attr="font:PingFangSC-Regular|14,textAlign:center,color:#333333,text:提交时间"/>
+            <UILabel name="_tsLb" layout="width:75%" attr="font:PingFangSC-Regular|14,color:#333333,text:"/>
+        </UIView>
+    </UIView>
 </UIView>

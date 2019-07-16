@@ -19,12 +19,16 @@
     return self;
 }
 
+- (void)startRequest{
+    
+}
+
 - (NSDictionary<NSString *,NSString *> *)requestHeaderFieldValueDictionary{
     NSString *key = @"token";
     NSHTTPCookie *cookie = [TYSaleCookieTool cookieWithName:key];
     NSDictionary *header = [NSDictionary dictionary];
     if (cookie) {
-        header = [NSDictionary dictionaryWithObjectsAndKeys:@"version",cookie.value,@"Authorization",nil];
+        header = [NSDictionary dictionaryWithObjectsAndKeys:cookie.value,@"Authorization",nil];
     }
     return header;
 }

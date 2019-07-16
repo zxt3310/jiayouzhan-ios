@@ -10,6 +10,15 @@
 #define UIDefine_h
 #import <UIKit/UIKit.h>
 
+typedef enum : NSUInteger {
+    RMOrderStatusWait,
+    RMOrderStatusTake,
+    RMOrderStatusArive,
+    RMOrderStatusDuring,
+    RMOrderStatusFinish,
+    RMOrderStatusRate
+} RMOrderStatus;
+
 /*请求错误码*/
 #define TokenInvalid 999   //token过期
 

@@ -7,10 +7,41 @@
 //
 
 #import "RMOrderListViewController.h"
+#import "RMOrderTable.h"
+#import "orderListViewModel.h"
 
 @implementation RMOrderListViewController
+{
+    UIView *_orderList;
+    orderListViewModel *viewModel;
+    RMOrderTable *orderTable;
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        viewModel = [[orderListViewModel alloc] init];
+    }
+    return self;
+}
 - (void)viewDidLoad{
     
+    self.view.backgroundColor = colorFromString(@"#f2f7f8", nil);
+    
+    orderTable = [[RMOrderTable alloc] init];
+    [_orderList addSubview:orderTable];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [viewModel getOrderList];
+    
+    __weak RMOrderTable *weakTable = orderTable;
+    viewModel.resCall = ^(NSArray *listAry){
+        weakTable.orderList = listAry;
+        [weakTable reload];
+    };
 }
 
 @end

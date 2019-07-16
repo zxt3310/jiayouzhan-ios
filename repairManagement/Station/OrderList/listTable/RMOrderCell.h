@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RepairOrderModel.h"
 
 @interface RMOrderCell : FlexBaseTableCell
+
+@property (nonatomic) RepairOrderModel *order;
 
 @end
 

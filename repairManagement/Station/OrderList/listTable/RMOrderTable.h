@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSArray *orderList;
 
+- (void)reload;
 @end
 
 NS_ASSUME_NONNULL_END
