@@ -9,6 +9,19 @@
 #import "RMOrderDetailViewController.h"
 
 @implementation RMOrderDetailViewController
+{
+    UILabel *_statusLb;
+    UILabel *_itemLb;
+    UILabel *_despLb;
+    UILabel *_gasLb;
+    UILabel *_tsLb;
+    UILabel *_takerLb;
+    UILabel *_takeTsLb;
+    UILabel *_finishLb;
+    UILabel *_takeDespLb;
+    UILabel *_gasNameLb;
+    UILabel *_addrLb;
+}
 
 - (void)viewDidLoad{
     [super viewDidLoad];

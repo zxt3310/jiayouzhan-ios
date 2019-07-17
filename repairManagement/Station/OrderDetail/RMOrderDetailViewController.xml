@@ -1,4 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<UIView layout="flex:1" attr="bgColor:white">
-    
+<UIView layout="flex:1,padding:20" attr="bgColor:white">
+<!-- 标题 -->
+    <UIView name="_statusLb" layout="" attr="">
+        <UILabel name="" layout="" attr="font:PingFangSC-Medium|14,color:#333333,text:"/>
+    </UIView>
+<!-- 故障信息 -->
+    <UIView layout="marginTop:12" attr="">
+        <UIView layout="flexDirection:row" attr="">
+            <UIImageView attr="source:tag_green" layout="marginLeft:3"/>
+            <UILabel name="" layout="marginLeft:5" attr="font:PingFangSC-Medium|14,color:#333333,text:故障信息"/>
+        </UIView>
+
+        <UIView layout="marginTop:14,flexDirection:row" attr="">
+            <UIView layout="width:20%" attr="">
+                <UILabel name="" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#909090,text:故障项目"/>
+            </UIView>
+            <UIView layout="width:75%" attr="">
+                <UILabel name="_itemLb" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#333333,text:"/>
+            </UIView>
+        </UIView>
+
+        <UIView layout="marginTop:14,flexDirection:row" attr="">
+            <UIView layout="width:20%" attr="">
+                <UILabel name="" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#909090,text:故障描述"/>
+            </UIView>
+            <UIView layout="width:75%" attr="">
+                <UILabel name="_despLb" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#333333,linesNum:0,text:"/>
+            </UIView>
+        </UIView>
+
+        <UIView layout="marginTop:14,flexDirection:row" attr="">
+            <UIView layout="width:20%" attr="">
+                <UILabel name="" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#909090,text:加 油 站"/>
+            </UIView>
+            <UIView layout="width:75%" attr="">
+                <UILabel name="_gasLb" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#333333,text:"/>
+            </UIView>
+        </UIView>
+
+        <UIView layout="marginTop:14,flexDirection:row" attr="">
+            <UIView layout="width:20%" attr="">
+                <UILabel name="" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#909090,text:提交时间"/>
+            </UIView>
+            <UIView layout="width:75%" attr="">
+                <UILabel name="_tsLb" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#333333,text:"/>
+            </UIView>
+        </UIView>
+    </UIView>
+<!-- 故障处理 -->
+
+    <UIView layout="marginTop:12" attr="">
+        <UIView layout="flexDirection:row" attr="">
+            <UIImageView attr="source:tag_green" layout="marginLeft:3"/>
+            <UILabel name="" layout="marginLeft:5" attr="font:PingFangSC-Medium|14,color:#333333,text:故障处理状况"/>
+        </UIView>
+
+        <UIView layout="marginTop:14,flexDirection:row" attr="">
+            <UIView layout="width:20%" attr="">
+                <UILabel name="" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#909090,text:处 理 人"/>
+            </UIView>
+            <UIView layout="width:75%" attr="">
+                <UILabel name="_takerLb" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#333333,text:"/>
+            </UIView>
+        </UIView>
+
+        <UIView layout="marginTop:14,flexDirection:row" attr="">
+            <UIView layout="width:20%" attr="">
+                <UILabel name="" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#909090,text:接单时间"/>
+            </UIView>
+            <UIView layout="width:75%" attr="">
+                <UILabel name="_takeTsLb" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#333333,linesNum:0,text:"/>
+            </UIView>
+        </UIView>
+
+        <UIView layout="marginTop:14,flexDirection:row" attr="">
+            <UIView layout="width:20%" attr="">
+                <UILabel name="" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#909090,text:完成时间"/>
+            </UIView>
+            <UIView layout="width:75%" attr="">
+                <UILabel name="_finishTsLb" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#333333,text:"/>
+            </UIView>
+        </UIView>
+
+        <UIView layout="marginTop:14,flexDirection:row" attr="">
+            <UIView layout="width:20%" attr="">
+                <UILabel name="" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#909090,text:处理说明"/>
+            </UIView>
+            <UIView layout="width:75%" attr="">
+                <UILabel name="_takeDespLb" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#333333,text:"/>
+            </UIView>
+        </UIView>
+    </UIView>
+
+    <!-- 加油站信息 -->
+
+    <UIView layout="marginTop:12" attr="">
+        <UIView layout="flexDirection:row" attr="">
+            <UIImageView attr="source:tag_green" layout="marginLeft:3"/>
+            <UILabel name="" layout="marginLeft:5" attr="font:PingFangSC-Medium|14,color:#333333,text:加油站信息"/>
+        </UIView>
+
+        <UIView layout="marginTop:14,flexDirection:row" attr="">
+            <UIView layout="width:20%" attr="">
+                <UILabel name="" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#909090,text:加 油 站"/>
+            </UIView>
+            <UIView layout="width:75%" attr="">
+                <UILabel name="_gasNameLb" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#333333,text:"/>
+            </UIView>
+        </UIView>
+
+        <UIView layout="marginTop:14,flexDirection:row" attr="">
+            <UIView layout="width:20%" attr="">
+                <UILabel name="" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#909090,text:地    址"/>
+            </UIView>
+            <UIView layout="width:75%" attr="">
+                <UILabel name="_addrLb" layout="flex:1" attr="font:PingFangSC-Regular|12,color:#333333,linesNum:0,text:"/>
+            </UIView>
+        </UIView>
+    </UIView>
 </UIView>
