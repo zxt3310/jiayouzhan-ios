@@ -1,15 +1,15 @@
 //
-//  RMOrderTable.m
+//  REMissonTable.m
 //  repairManagement
 //
 //  Created by zhangxintao on 2019/7/12.
 //  Copyright © 2019 zhangxintao. All rights reserved.
 //
 
-#import "RMOrderTable.h"
-#import "RMOrderCell.h"
+#import "REMissonTable.h"
+#import "REMissionCell.h"
 
-@implementation RMOrderTable
+@implementation REMissonTable
 {
     UITableView *orderTable;
 }
@@ -37,9 +37,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    RMOrderCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    REMissionCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell) {
-        cell = [[RMOrderCell alloc] initWithFlex:nil reuseIdentifier:@"cell"];
+        cell = [[REMissionCell alloc] initWithFlex:nil reuseIdentifier:@"cell"];
     }
     cell.order = self.orderList[indexPath.item];
     return cell;

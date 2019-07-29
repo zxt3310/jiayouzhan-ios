@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "FlexBaseWithNaviViewController.h"
+#import "RMRepairDetailModel.h"
+#import "RMRepairDetailViewModel.h"
 
-@interface RMOrderDetailViewController : FlexBaseWithNaviViewController
+@interface RMOrderDetailViewController : FlexBaseWithNaviViewController <RepairDetailDelegate>
+
+@property NSString *repairNo;
+
+@property (nonatomic) RMRepairDetailModel *order;
 
 @end
 

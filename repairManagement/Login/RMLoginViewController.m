@@ -60,6 +60,8 @@
     viewModel.successed = ^{
         if (role == 2) {
             [UIApplication sharedApplication].keyWindow.rootViewController = [TYSaleStaticObj shareObj].stationVC;
+        }else{
+            [UIApplication sharedApplication].keyWindow.rootViewController = [TYSaleStaticObj shareObj].engineerVC;
         }
     };
 }

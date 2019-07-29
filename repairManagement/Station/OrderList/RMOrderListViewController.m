@@ -9,6 +9,7 @@
 #import "RMOrderListViewController.h"
 #import "RMOrderTable.h"
 #import "orderListViewModel.h"
+#import "RMOrderDetailViewController.h"
 
 @implementation RMOrderListViewController
 {
@@ -42,6 +43,12 @@
         weakTable.orderList = listAry;
         [weakTable reload];
     };
+}
+
+- (void)tableDidTapOrder:(NSString *)orderNo{
+    RMOrderDetailViewController *detalVC = [[RMOrderDetailViewController alloc] init];
+    detalVC.repairNo = orderNo;
+    [self.navigationController pushViewController:detalVC animated:YES];
 }
 
 @end

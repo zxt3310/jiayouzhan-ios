@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="flex:1" attr="bgColor:white">
+    <UIView name = "_headView" layout="flexDirection:row,alignItems:flex-end" attr="bgColor:#1c713d">
+        <UIView layout="height:70,padding:10,flex:1,flexDirection:row,justifyContent:space-between,alignItems:center,alignSelf:flex-end" attr="">
+            <UIView name="_switchBtn" onPress="switchWork" layout="justifyContent:center,alignItems:center,width:40%,height:35" attr="bgColor:#ff8582">
+                <UILabel name="_workingLb" layout="" attr="fontSize:14,color:#333333,text:上线接单"/>
+            </UIView>
+            <UILabel name="" layout="" attr="fontSize:14,color:white,text:先上线，才能接单"/>
+            <FlexTouchView onPress="fresh" layout="" attr="">
+                <UIImageView layout="width:28,height:28" attr="source:fresh"/>
+            </FlexTouchView>
+        </UIView>
+    </UIView>
+
+    <UIView name="_missionTable" layout="flex:1" attr="">
+        
+    </UIView>
+</UIView>

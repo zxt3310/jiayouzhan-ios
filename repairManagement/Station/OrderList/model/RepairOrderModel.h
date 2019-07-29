@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSInteger status;
 @property NSString *gs_name;
 @property NSString *address;
+@property CGFloat juli;
 @end
 
 NS_ASSUME_NONNULL_END

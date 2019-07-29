@@ -6,7 +6,7 @@
         </FlexTouchView>
 
         <UIView layout="flex:1,flexDirection:row" attr="">
-            <UILabel name="_titleLb" layout="width:100%" attr="font:PingFangSC-Medium|18,color:white,textAlign:center,lineBreakMode:truncatingTail,linesNum:1,text:"/>
+            <UILabel name="_titleLb" layout="width:100%" attr="font:PingFangSC-Medium|18,color:#333333,textAlign:center,lineBreakMode:truncatingTail,linesNum:1,text:"/>
         </UIView>
 
         <FlexTouchView onPress="rightItemAction" layout="height:44,width:68,justifyContent:center,alignItems:center,padding:10" attr="">

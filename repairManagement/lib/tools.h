@@ -21,7 +21,10 @@
 @interface RMUserInfo : NSObject <YYModel,NSCoding>
 @property NSString *mobile;
 @property NSString *name;
+@property RMRole role;
+@property NSInteger isTaking;
 
++ (instancetype)shareInfo;
 - (void)save;
 + (instancetype)loadFromLocal;
 @end

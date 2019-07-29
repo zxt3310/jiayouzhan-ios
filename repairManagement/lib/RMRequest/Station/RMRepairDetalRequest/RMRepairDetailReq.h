@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 typedef void(^repairDetailRes)(RMRepairDetailModel *res);
 @interface RMRepairDetailReq : TYCommonRequest
 @property repairDetailRes resCall;
+
+- (instancetype)initWithOrderNum:(NSString *)orderNum;
 @end
 
 NS_ASSUME_NONNULL_END

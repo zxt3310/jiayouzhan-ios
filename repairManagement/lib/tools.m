@@ -26,6 +26,20 @@ static TYSaleStaticObj *staticObj = nil;
 @end
 
 @implementation RMUserInfo
+
+static RMUserInfo *info = nil;
+
++ (instancetype)shareInfo{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        info = [self loadFromLocal];
+        if (!info) {
+            info = [[self alloc] init];
+        }
+    });
+    return info;
+}
+
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
     return [self yy_modelInitWithCoder:coder];
@@ -36,7 +50,7 @@ static TYSaleStaticObj *staticObj = nil;
 }
 
 - (void)save{
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self requiringSecureCoding:YES error:nil];
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self];// archivedDataWithRootObject:self requiringSecureCoding:NO error:nil];
     [[NSUserDefaults standardUserDefaults] setObject:data forKey:RMUserINFO];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
@@ -44,7 +58,7 @@ static TYSaleStaticObj *staticObj = nil;
 + (instancetype)loadFromLocal{
     NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:RMUserINFO];
     if (data) {
-        return [NSKeyedUnarchiver unarchivedObjectOfClass:[RMUserInfo class] fromData:data error:nil];
+        return [NSKeyedUnarchiver unarchiveObjectWithData:data];// unarchivedObjectOfClass:[RMUserInfo class] fromData:data error:nil];
     }
     return nil;
 }

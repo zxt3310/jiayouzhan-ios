@@ -19,6 +19,18 @@ typedef enum : NSUInteger {
     RMOrderStatusRate
 } RMOrderStatus;
 
+typedef enum : NSUInteger {
+    RMRoleStation = 2,
+    RMRoleEnginner = 1
+} RMRole;
+
+//NSString *const RMOrderWaitTag = @"待接单";
+//NSString *const RMOrderTakeTag = @"已接单";
+//NSString *const RMOrderAriveTag = @"到达加油站";
+//NSString *const RMOrderDuringTag = @"进行中";
+//NSString *const RMOrderFinishTag = @"待评价";
+//NSString *const RMOrderRateTag = @"已评价";
+
 /*请求错误码*/
 #define TokenInvalid 999   //token过期
 

@@ -19,10 +19,6 @@
     return self;
 }
 
-- (void)startRequest{
-    
-}
-
 - (NSDictionary<NSString *,NSString *> *)requestHeaderFieldValueDictionary{
     NSString *key = @"token";
     NSHTTPCookie *cookie = [TYSaleCookieTool cookieWithName:key];
@@ -33,11 +29,16 @@
     return header;
 }
 
-- (void)requestFinished:(__kindof YTKBaseRequest *)request{
+- (void)startRequest{
+    [SVProgressHUD showWithStatus:@"加载中..."];
+}
 
+- (void)requestFinished:(__kindof YTKBaseRequest *)request{
+    [SVProgressHUD dismiss];
 }
 
 - (void)requestFailed:(__kindof YTKBaseRequest *)request{
+    [SVProgressHUD dismiss];
     NSNumber *result = [request.responseObject objectForKey:@"ret"];
     if ([result integerValue] == TokenInvalid) {
         [SVProgressHUD showInfoWithStatus:@"身份已失效，请重新登录"];

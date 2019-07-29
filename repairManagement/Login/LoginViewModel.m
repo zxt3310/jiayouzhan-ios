@@ -24,9 +24,10 @@
         token = [tokenType stringByAppendingString:[NSString stringWithFormat:@" %@",token]];
         [TYSaleCookieTool saveCookieWithName:@"token" Value:token domain:RM_Api_domain expire:expire];
         
-        RMUserInfo *userinfo = [[RMUserInfo alloc] init];
+        RMUserInfo *userinfo = [RMUserInfo shareInfo];
         userinfo.name = name;
         userinfo.mobile = mobile;
+        userinfo.role = role;
         [userinfo save];
         
         DLog(@"%@",request.responseString);

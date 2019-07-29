@@ -31,6 +31,7 @@
 }
 
 - (void)startRequest{
+    [super startRequest];
     [self startWithCompletionBlockWithSuccess:^(RMRepairDetailReq *request){
         id obj = [request.responseObject objectForKey:@"data"];
         RMRepairDetailModel *detail = [RMRepairDetailModel yy_modelWithJSON:obj];

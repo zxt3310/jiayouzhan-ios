@@ -21,19 +21,33 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [YTKNetworkConfig sharedConfig].baseUrl = RM_Api_domain;
+    
     stationTabController *stationTabVC = [[stationTabController alloc] init];
     UINavigationController *stationNav = [[UINavigationController alloc] initWithRootViewController:stationTabVC];
+    
     RMLoginViewController *loginVC = [[RMLoginViewController alloc] init];
+    
+    EngineerTabController *engTabVC = [[EngineerTabController alloc] init];
+    UINavigationController *engineerNav = [[UINavigationController alloc] initWithRootViewController:engTabVC];
+    
     
     [TYSaleStaticObj shareObj].stationVC = stationNav;
     [TYSaleStaticObj shareObj].loginVC = loginVC;
+    [TYSaleStaticObj shareObj].engineerVC = engineerNav;
     
     if([TYSaleCookieTool cookieWithName:@"token"]){
-        self.window.rootViewController = stationNav;
+        RMUserInfo *user = [RMUserInfo loadFromLocal];
+        if (user.role == RMRoleStation) {
+            self.window.rootViewController = stationNav;
+        }
+        else{
+            self.window.rootViewController = engineerNav;
+        }
+        
     }else{
         self.window.rootViewController = loginVC;
     }
-    [YTKNetworkConfig sharedConfig].baseUrl = RM_Api_domain;
     
     [self.window makeKeyAndVisible];
     return YES;

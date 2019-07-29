@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="padding:10,paddingBottom:0" attr="bgColor:#f2f7f8">
+    <UIView layout="padding:15" attr="borderWidth:1,borderColor:#e1e9ea,bgColor:white">
+        <UIView layout="flexDirection:row,alignItems:center,justifyContent:space-between" attr="">
+        <UIView layout="flexDirection:row" attr="">
+            <UIImageView layout="width:22,height:22" attr="source:dot"/>
+            <UILabel name="_gasLb" layout="marginLeft:10" attr="font:PingFangSC-Medium|14,color:#333333,text:"/>
+        </UIView>
+            <UILabel name="_distanceLb" layout="flexDirection:row-reverse" attr="font:PingFangSC-Regular|12,color:#fe4a47,text:距您"/>
+        </UIView>
+
+        <UIView layout="flexDirection:row,flex:1,marginTop:5" attr="">
+            <UILabel name="" layout="width:20%" attr="font:PingFangSC-Regular|14,textAlign:center,color:#333333,text:故障项目"/>
+            <UILabel name="_itemLb" layout="width:75%" attr="font:PingFangSC-Regular|14,color:#333333,text:"/>
+        </UIView>
+
+        <UIView layout="flexDirection:row,flex:1,marginTop:5" attr="">
+            <UILabel name="" layout="width:20%,alignSelf:flex-start" attr="font:PingFangSC-Regular|14,textAlign:center,color:#333333,text:故障描述"/>
+            <UILabel name="_despLb" layout="width:75%" attr="font:PingFangSC-Regular|14,linesNum:0,color:#333333,text:"/>
+        </UIView>
+
+        <UIView layout="flexDirection:row,flex:1,marginTop:5" attr="">
+            <UILabel name="" layout="width:20%" attr="font:PingFangSC-Regular|14,textAlign:center,color:#333333,text:地    址"/>
+            <UILabel name="_addrLb" layout="width:75%" attr="font:PingFangSC-Regular|14,color:#333333,text:"/>
+        </UIView>
+
+        <UIView layout="flexDirection:row,flex:1,marginTop:5" attr="">
+            <UILabel name="" layout="width:20%" attr="font:PingFangSC-Regular|14,textAlign:center,color:#333333,text:发布时间"/>
+            <UILabel name="_tsLb" layout="width:75%" attr="font:PingFangSC-Regular|14,color:#333333,text:"/>
+        </UIView>
+
+        <UIView layout="flexDirection:row-reverse" attr="">
+        <FlexTouchView name="_takeBtn" onPress="" layout=",width:90,height:30,justifyContent:center,alignItems:center" attr="bgColor:#909090">
+            <UILabel name="" layout="" attr="fontSize:14,color:#white,text:接单"/>
+        </FlexTouchView>
+    </UIView>
+    </UIView>
+</UIView>

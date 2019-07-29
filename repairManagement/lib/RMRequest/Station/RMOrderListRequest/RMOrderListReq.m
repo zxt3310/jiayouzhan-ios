@@ -19,6 +19,7 @@
 }
 
 - (void)startRequest{
+    [super startRequest];
     [self startWithCompletionBlockWithSuccess:^(RMOrderListReq *request){
         id obj = [request.responseObject objectForKey:@"data"];
         NSArray *listAry = [NSArray yy_modelArrayWithClass:[RepairOrderModel class] json:obj];

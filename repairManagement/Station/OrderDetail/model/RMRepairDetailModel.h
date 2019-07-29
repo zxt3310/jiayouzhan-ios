@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface RMRepairDetailModel : NSObject
 
 @property NSString *repair_num;
-@property NSString *gas_name;
+@property NSString *gs_name;
 @property NSString *address;
 @property NSString *faulty_item;
 @property NSString *faulty_desc;
@@ -27,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSInteger rating_a;
 @property NSInteger rating_q;
 @property NSString *action;
-@property NSString *create_at;
+@property NSString *created_at;
 
 @end
 
