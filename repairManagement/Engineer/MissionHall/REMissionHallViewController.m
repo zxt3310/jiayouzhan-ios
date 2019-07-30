@@ -9,6 +9,7 @@
 #import "REMissionHallViewController.h"
 #import "REMissionHallViewModel.h"
 #import "REMissonTable.h"
+#import "REMissionDetailViewController.h"
 
 @interface REMissionHallViewController() <missonHallDelegate>
 
@@ -29,8 +30,14 @@
     self = [super init];
     if (self) {
         viewModel = [[REMissionHallViewModel alloc] init];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(takeOrder:) name:RMOrderTakenNotify object:nil];
     }
     return self;
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)viewDidLoad{
@@ -41,20 +48,25 @@
     
     orderTable = [[REMissonTable alloc] init];
     [_missionTable addSubview:orderTable];
-    
-    [viewModel getMissonList:0];
     viewModel.delegate = self;
     
     [self isWorking];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [viewModel getMissonList:0];
+}
+
+#pragma mark viewModel Delegate
 - (void)viewModelDidLoadMissonList:(NSArray<RepairOrderModel *> *)ary{
     orderTable.orderList = ary;
     [orderTable reload];
 }
 
-- (void)viewDidLayoutSubviews{
-    
+- (void)viewModelDidTakeOrder:(NSString *)orderNum{
+    [SVProgressHUD showSuccessWithStatus:@"接单成功"];
+    [self pushDetailWithOrderNum:orderNum];
 }
 
 - (void)fresh{
@@ -73,23 +85,39 @@
 }
 
 - (void)switchWork{
-    RMUserInfo *info = [RMUserInfo shareInfo];
-    NSInteger isWorking = ![RMUserInfo shareInfo].isTaking;
+    BOOL isWorking = ![RMUserInfo shareInfo].isTaking;
     if (isWorking) {
         _switchBtn.backgroundColor = colorFromString(@"#ffd67a", nil);
         _workingLb.text = @"下线休息";
-        isWorking = 1;
     }else{
          _switchBtn.backgroundColor = colorFromString(@"#ff8582", nil);
         _workingLb.text = @"上线接单";
-        isWorking = 0;
     }
     [RMUserInfo shareInfo].isTaking = isWorking;
     [[RMUserInfo shareInfo] save];
+    [orderTable reload];
+}
+
+- (void)takeOrder:(NSNotification *)notify{
+    id obj = notify.object;
+    RepairOrderModel *order = (RepairOrderModel *)obj;
+    [viewModel takeOrder:order.order_no];
+}
+
+- (void)tableDidTapOrder:(NSString *)orderNum{
+    [self pushDetailWithOrderNum:orderNum];
+}
+
+- (void)pushDetailWithOrderNum:(NSString *)orderNum{
+    REMissionDetailViewController *detailVC = [[REMissionDetailViewController alloc] init];
+    detailVC.orderNum = orderNum;
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 - (UIEdgeInsets)getSafeArea:(BOOL)portrait{
     UIEdgeInsets inset = UIEdgeInsetsMake(0, 0, kTabBarHeight, 0);
     return inset;
 }
+
+
 @end

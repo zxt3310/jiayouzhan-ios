@@ -49,8 +49,12 @@ static RMUserInfo *info = nil;
     [self yy_modelEncodeWithCoder:aCoder];
 }
 
++ (BOOL)supportsSecureCoding{
+    return YES;
+}
+
 - (void)save{
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self];// archivedDataWithRootObject:self requiringSecureCoding:NO error:nil];
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self requiringSecureCoding:YES error:nil];
     [[NSUserDefaults standardUserDefaults] setObject:data forKey:RMUserINFO];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
@@ -58,7 +62,7 @@ static RMUserInfo *info = nil;
 + (instancetype)loadFromLocal{
     NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:RMUserINFO];
     if (data) {
-        return [NSKeyedUnarchiver unarchiveObjectWithData:data];// unarchivedObjectOfClass:[RMUserInfo class] fromData:data error:nil];
+        return [NSKeyedUnarchiver unarchivedObjectOfClass:[RMUserInfo class] fromData:data error:nil];
     }
     return nil;
 }

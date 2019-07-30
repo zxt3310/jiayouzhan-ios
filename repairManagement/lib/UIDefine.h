@@ -74,6 +74,9 @@ typedef enum : NSUInteger {
 #define RM_Api_domain @"http://gsj.dev.rsc.ranknowcn.com"
 #endif
 
+/*通知*/
+#define RMOrderTakenNotify @"ORDER_TAKEN"
+
 /* NSUserDefault */
 #define RMUserINFO @"userinfo"
 

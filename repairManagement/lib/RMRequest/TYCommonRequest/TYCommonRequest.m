@@ -43,6 +43,11 @@
     if ([result integerValue] == TokenInvalid) {
         [SVProgressHUD showInfoWithStatus:@"身份已失效，请重新登录"];
         [UIApplication sharedApplication].keyWindow.rootViewController = [TYSaleStaticObj shareObj].loginVC;
+    }else{
+        NSString *errMsg = [request.responseObject objectForKey:@"msg"];
+        if (errMsg) {
+            [SVProgressHUD showInfoWithStatus:errMsg];
+        }
     }
 }
 

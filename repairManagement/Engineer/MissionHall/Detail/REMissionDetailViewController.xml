@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="flex:1,padding:20" attr="bgColor:#f2f7f8">
+
+<!-- 故障信息 -->
+    <UIView layout="marginTop:13,padding:10" attr="bgColor:white">
+        <UIView layout="flexDirection:row" attr="">
+            <UIImageView attr="source:tag_green" layout="marginLeft:3"/>
+            <UILabel name="" layout="marginLeft:5" attr="font:PingFangSC-Medium|14,color:#333333,text:故障信息"/>
+        </UIView>
+
+        <UIView layout="marginTop:14,flexDirection:row" attr="">
+            <UIView layout="width:60,height:20" attr="">
+                <UILabel name="" layout="flex:1" attr="font:PingFangSC-Regular|13,textAlign:center,color:#909090,text:故障编号"/>
+            </UIView>
+            <UIView layout="width:70%,height:20" attr="">
+                <UILabel name="_orderNumLb" layout="flex:1" attr="font:PingFangSC-Regular|13,color:#333333,text:"/>
+            </UIView>
+        </UIView>
+
+        <UIView layout="marginTop:14,flexDirection:row" attr="">
+            <UIView layout="width:60,height:20" attr="">
+                <UILabel name="" layout="flex:1" attr="font:PingFangSC-Regular|13,textAlign:center,color:#909090,text:故障项目"/>
+            </UIView>
+            <UIView layout="width:70%,height:20" attr="">
+                <UILabel name="_itemLb" layout="flex:1" attr="font:PingFangSC-Regular|13,color:#333333,text:"/>
+            </UIView>
+        </UIView>
+
+        <UIView layout="marginTop:14,flexDirection:row" attr="">
+            <UIView layout="width:60,height:20" attr="">
+                <UILabel name="" layout="flex:1" attr="font:PingFangSC-Regular|13,textAlign:center,color:#909090,text:故障描述"/>
+            </UIView>
+            <UIView layout="width:80%,minHeight:20" attr="">
+                <UILabel name="_despLb" layout="" attr="font:PingFangSC-Regular|13,color:#333333,linesNum:0,lineBreakMode:truncatingTail,text:"/>
+            </UIView>
+        </UIView>
+
+        <UIView layout="marginTop:14,flexDirection:row" attr="">
+            <UIView layout="width:60,height:20" attr="">
+                <UILabel name="" layout="flex:1" attr="font:PingFangSC-Regular|13,textAlign:center,color:#909090,text:加 油 站"/>
+            </UIView>
+            <UIView layout="width:70%,height:20" attr="">
+                <UILabel name="_gasLb" layout="flex:1" attr="font:PingFangSC-Regular|13,color:#333333,text:"/>
+            </UIView>
+        </UIView>
+
+        <UIView layout="marginTop:14,flexDirection:row" attr="">
+            <UIView layout="width:60,height:20" attr="">
+                <UILabel name="" layout="flex:1" attr="font:PingFangSC-Regular|13,textAlign:center,color:#909090,text:提交时间"/>
+            </UIView>
+            <UIView layout="width:70%,height:20" attr="">
+                <UILabel name="_tsLb" layout="flex:1" attr="font:PingFangSC-Regular|13,color:#333333,text:"/>
+            </UIView>
+        </UIView>
+    </UIView>
+
+    <!-- 加油站信息 -->
+
+    <UIView layout="marginTop:13,padding:10" attr="bgColor:white">
+        <UIView layout="flexDirection:row" attr="">
+            <UIImageView attr="source:tag_green" layout="marginLeft:3"/>
+            <UILabel name="" layout="marginLeft:5" attr="font:PingFangSC-Medium|14,color:#333333,text:加油站信息"/>
+        </UIView>
+        <UIView layout="flexDirection:row,justifyContent:space-between,alignItems:center" attr="">
+            <UIView layout="" attr="">
+                <UIView layout="marginTop:14,flexDirection:row" attr="">
+                    <UIView layout="width:60" attr="">
+                        <UILabel name="" layout="" attr="font:PingFangSC-Regular|13,color:#909090,textAlign:center,text:加 油 站"/>
+                    </UIView>
+                    <UIView layout="width:60%" attr="">
+                        <UILabel name="_gasNameLb" layout="" attr="font:PingFangSC-Regular|13,color:#333333,text:中国石化（日坛加油站）"/>
+                    </UIView>
+                </UIView>
+
+                <UIView layout="marginTop:14,flexDirection:row" attr="">
+                    <UIView layout="width:60" attr="">
+                        <UILabel name="" layout="" attr="font:PingFangSC-Regular|13,color:#909090,textAlign:center,text:地    址"/>
+                    </UIView>
+                    <UIView layout="flexDirection:row,width:60%" attr="">
+                        <UILabel name="_addrLb" layout="" attr="font:PingFangSC-Regular|13,color:#333333,linesNum:0,text:"/>
+                    </UIView>
+                </UIView>
+            </UIView>
+
+            <UIView layout="width:1,height:80%" attr="bgColor:#dcdbdc"/>
+            <FlexTouchView onPress="jumpToLocate" layout="" attr="">
+                <UIImageView name="" onPress="" layout="width:22,height:22,marginRight:10" attr="source:addr"/>
+            </FlexTouchView>
+        </UIView>
+    </UIView>
+
+
+    <!-- 联系人 -->
+
+    <UIView layout="marginTop:13,padding:10" attr="bgColor:white">
+        <UIView layout="flexDirection:row" attr="">
+            <UIImageView attr="source:tag_green" layout="marginLeft:3"/>
+            <UILabel name="" layout="marginLeft:5" attr="font:PingFangSC-Medium|14,color:#333333,text:联系人信息"/>
+        </UIView>
+        <UIView layout="flexDirection:row,justifyContent:space-between,alignItems:center" attr="">
+            <UIView layout="" attr="">
+                <UIView layout="marginTop:14,flexDirection:row" attr="">
+                    <UIView layout="width:60,height:20" attr="">
+                        <UILabel name="" layout="flex:1" attr="font:PingFangSC-Regular|13,textAlign:center,color:#909090,text:联 系 人"/>
+                    </UIView>
+                    <UIView layout="width:60%,height:20" attr="">
+                        <UILabel name="_contactLb" layout="flex:1" attr="font:PingFangSC-Regular|13,color:#333333,text:"/>
+                    </UIView>
+                </UIView>
+
+                <UIView layout="marginTop:14,flexDirection:row" attr="">
+                    <UIView layout="width:60,height:20" attr="">
+                        <UILabel name="" layout="flex:1" attr="font:PingFangSC-Regular|13,color:#909090,textAlign:center,text:电    话"/>
+                    </UIView>
+                    <UIView layout="width:60%,height:20" attr="">
+                        <UILabel name="_phoneLb" layout="flex:1" attr="font:PingFangSC-Regular|13,color:#333333,text:"/>
+                    </UIView>
+                </UIView>
+            </UIView>
+
+            <UIView layout="width:1,height:80%" attr="bgColor:#dcdbdc">
+
+            </UIView>
+            <FlexTouchView onPress="makePhoneCall" layout="" attr="">
+                <UIImageView name="" onPress="" layout="width:22,height:22,marginRight:10" attr="source:tel"/>
+            </FlexTouchView>
+        </UIView>
+    </UIView>
+    
+    <UIView layout="flex:1,justifyContent:center,alignItems:center" attr="">
+        <FlexTouchView name="_takeBtn" onPress="takeOrder" layout="width:200,height:50,justifyContent:center,alignItems:center" attr="bgColor:#1c713d">
+            <UILabel name="" layout="" attr="fontSize:16,color:white,lineBreakMode:truncatingTail,linesNum:1,text:接单"/>
+        </FlexTouchView>
+
+        <FlexTouchView name="_ariveBtn" onPress="arriveStation" layout="width:200,height:50,justifyContent:center,alignItems:center" attr="bgColor:#1c713d,hidden:true">
+            <UILabel name="" layout="" attr="fontSize:16,color:white,lineBreakMode:truncatingTail,linesNum:1,text:到达加油站"/>
+        </FlexTouchView>
+    </UIView>
+
+</UIView>

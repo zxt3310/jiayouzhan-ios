@@ -18,6 +18,8 @@
     UILabel *_addrLb;
     UILabel *_tsLb;
     UILabel *_gasLb;
+    UIView *_takeBtn;
+    
 }
 @synthesize order = _order;
 - (void)onInit{
@@ -35,6 +37,32 @@
     _addrLb.text = Kstr(order.address);
     _tsLb.text = Kstr(order.submit_time);
     _distanceLb.text = [NSString stringWithFormat:@"距您%@公里",stringOfFloat(order.juli)];
+    
+    if ([RMUserInfo shareInfo].isTaking) {
+        _takeBtn.backgroundColor = colorFromString(@"#1c713d", nil);
+        _takeBtn.userInteractionEnabled = YES;
+    }else{
+        _takeBtn.backgroundColor = colorFromString(@"#909090", nil);
+        _takeBtn.userInteractionEnabled = NO;
+    }
+}
+
+- (void)takeOrder{
+    [[NSNotificationCenter defaultCenter] postNotificationName:RMOrderTakenNotify object:self.order];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    UITouch *touch = [touches anyObject];
+
+    if ([touch.view isEqual:_takeBtn]) {
+        return;
+    }
+    else {
+        [[self nextResponder] touchesBegan:touches withEvent:event];
+        if ([super respondsToSelector:@selector(touchesBegan:withEvent:)]) {
+            [super touchesBegan:touches withEvent:event];
+        }
+    }
 }
 
 @end

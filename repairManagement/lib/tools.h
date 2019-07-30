@@ -18,11 +18,11 @@
 
 @end
 
-@interface RMUserInfo : NSObject <YYModel,NSCoding>
+@interface RMUserInfo : NSObject <YYModel,NSSecureCoding>
 @property NSString *mobile;
 @property NSString *name;
 @property RMRole role;
-@property NSInteger isTaking;
+@property BOOL isTaking;
 
 + (instancetype)shareInfo;
 - (void)save;

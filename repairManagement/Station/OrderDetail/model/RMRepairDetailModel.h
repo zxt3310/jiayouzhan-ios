@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString *address;
 @property NSString *faulty_item;
 @property NSString *faulty_desc;
-@property NSString *pic;
+@property NSArray *pic;
 @property NSString *contact;
 @property NSString *name;
 @property NSString *order_taken_time;
@@ -28,6 +28,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSInteger rating_q;
 @property NSString *action;
 @property NSString *created_at;
+@property NSString *contact_phone;
+@property double lat;
+@property double lon;
+@property NSString *publish;
+
 
 @end
 

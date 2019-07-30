@@ -19,7 +19,6 @@
     self = [super init];
     if (self) {
         [self enableFlexLayout:YES];
-       
     }
     return self;
 }

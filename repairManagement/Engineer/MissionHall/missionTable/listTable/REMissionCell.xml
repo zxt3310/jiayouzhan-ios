@@ -30,9 +30,9 @@
         </UIView>
 
         <UIView layout="flexDirection:row-reverse" attr="">
-        <FlexTouchView name="_takeBtn" onPress="" layout=",width:90,height:30,justifyContent:center,alignItems:center" attr="bgColor:#909090">
-            <UILabel name="" layout="" attr="fontSize:14,color:#white,text:接单"/>
-        </FlexTouchView>
+        <UIView name="_takeBtn" onPress="takeOrder" layout=",width:90,height:30,justifyContent:center,alignItems:center" attr="bgColor:#909090">
+            <UILabel name="" layout="" attr="fontSize:14,color:white,text:接单"/>
+        </UIView>
     </UIView>
     </UIView>
 </UIView>

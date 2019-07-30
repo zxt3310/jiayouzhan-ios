@@ -21,6 +21,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    //加载热更新
+    FlexRestorePreviewSetting();
+    
     [YTKNetworkConfig sharedConfig].baseUrl = RM_Api_domain;
     
     stationTabController *stationTabVC = [[stationTabController alloc] init];
