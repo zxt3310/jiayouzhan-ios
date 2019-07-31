@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="padding:10" attr="">
+    <UIView layout="paddingLeft:10,paddingRight:10" attr="bgColor:white">
+        <UIView layout="" attr="borderColor:#e1e9ea,borderWidth:1,borderRadius:5">
+            <UIView layout="flexDirection:row" attr="">
+                <UIImageView layout="width:5,height:22" attr="source:tag"/>
+                <UILabel name="" layout="" attr="fontSize:14,color:#333333,text:配件"/>
+            </UIView>
+
+            <UIView layout="flexDirection:row,alignItems:center" attr="">
+                <UILabel name="" layout="" attr="fontSize:14,color:#333333,text:配件"/>
+                <FlexTouchView onPress="" layout="padding:10,marginLeft:25,flexDirection:row,justifyContent:space-between" attr="bgColor:#f8f8f8y">
+                    <UILabel name="" layout="" attr="fontSize:14,color:#333333,text:请选择"/>
+                    <UIImageView layout="width:20,height:20" attr="source:down"/>
+                </FlexTouchView>
+            </UIView>
+            
+            <UIView layout="flexDirection:row,alignItems:center" attr="">
+                <UILabel name="" layout="" attr="fontSize:14,color:#333333,text:数量"/>
+                <FlexTouchView onPress="" layout="padding:10,marginLeft:25,flexDirection:row,justifyContent:space-between" attr="bgColor:#f8f8f8y">
+                    <UITextField name="" layout="" attr="fontSize:14,color:black,textAlign:left,placeholder:请输入,text:"/>
+                    <UIImageView layout="width:20,height:20" attr="source:down"/>
+                </FlexTouchView>
+            </UIView>
+
+            <UIView layout="flexDirection:row,alignItems:center" attr="">
+                <UILabel name="" layout="" attr="fontSize:14,color:#333333,text:状态"/>
+                <UIView layout="flexDirection:row,justifyContent:space-between" attr="">
+                    <UIView layout="width:76,height:30,justifyContent:center,alignItems:center" attr="bgColor:lightGray">
+                        <UILabel name="" layout="" attr="fontSize:14,color:white,text:维修"/>
+                    </UIView>
+
+                    <UIView layout="width:76,height:30,justifyContent:center,alignItems:center" attr="bgColor:lightGray">
+                        <UILabel name="" layout="" attr="fontSize:14,color:white,text:更换"/>
+                    </UIView>
+
+                    <UIView layout="width:76,height:30,justifyContent:center,alignItems:center" attr="bgColor:lightGray">
+                        <UILabel name="" layout="" attr="fontSize:14,color:white,text:报废"/>
+                    </UIView>
+                </UIView>
+            </UIView>
+        </UIView>
+    </UIView>
+</UIView>

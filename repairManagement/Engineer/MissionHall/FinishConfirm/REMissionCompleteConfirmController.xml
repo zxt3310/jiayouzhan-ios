@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="flex:1,padding:10" attr="">
+    <UIView layout="flexDirection:row,padding:10,height:20%,alignItems:flex-start" attr="#f2f7f8">
+        <UILabel name="" layout="marginTop:8" attr="fontSize:16,color:#333333,lineBreakMode:truncatingTail,linesNum:1,text:处理结果"/>
+        <FlexTextView name="_resultTF" layout="marginLeft:15,flex:1,height:100%" attr="fontSize:16,color:black,textAlign:left,placeholder:请输入"/>
+    </UIView>
+
+    <UIView layout="height:1" attr="bgColor:#F1F1F1"/>
+
+    <UIView name="_libView" layout="padding:10,flexDirection:row,flexWrap:wrap" attr="">
+
+    </UIView>
+
+    <UIView layout="flex:1,justifyContent:center,alignItems:center" attr="">
+        <FlexTouchView onPress="submit" layout="width:200,height:48,justifyContent:center,alignItems:center" attr="bgColor:#1c713d,borderRadius:8">
+            <UILabel name="" layout="" attr="fontSize:16,color:white,text:提交"/>
+        </FlexTouchView>
+    </UIView>
+</UIView>

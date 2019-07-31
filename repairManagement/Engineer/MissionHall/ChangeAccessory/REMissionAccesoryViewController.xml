@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="flex:1" attr="bgColor:white">
+    <REAccesoryCell/>
+    <REAccesoryCell/>
+    <REAccesoryCell/>
+
+    <UIView layout="flex:1,justifyContent:center,alignItems:center" attr="">
+        <FlexTouchView onPress="" layout="width:200,height:50" attr="bgColor:#1c713d">
+            <UILabel name="" layout="" attr="fontSize:14,color:white,lineBreakMode:truncatingTail,linesNum:1,text:提交"/>
+        </FlexTouchView>
+    </UIView>
+</UIView>

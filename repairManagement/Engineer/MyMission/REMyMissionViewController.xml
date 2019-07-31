@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<UIView layout="flex:1" attr="bgColor:white">
+<UIView layout="flex:1" attr="white">
+    <UIView name="_headView" layout="justifyContent:flex-end" attr="bgColor:#1c713d">
+        <UIView layout="height:70,flexDirection:row,justifyContent:space-around,alignItems:center" attr="">
+            <FlexTouchView layout="" onPress="switchTaking" attr="">
+                <UILabel name="_takingLb" layout="" attr="fontSize:14,color:white,text:进行中"/>
+                <UIView name="_takingTag" layout="height:2" attr="bgColor:white"/>
+            </FlexTouchView>
+
+            <FlexTouchView layout="" onPress="switchFinished" attr="">
+                <UILabel name="_finishLb" layout="" attr="fontSize:14,color:#333333,text:已完成"/>
+                <UIView name="_finishTag" layout="height:2" attr="bgColor:white,hidden:true"/>
+            </FlexTouchView>
+        </UIView>
+    </UIView>
+
+    <UIView name="_tableView" layout="flex:1" attr="">
     
+    </UIView>
 </UIView>

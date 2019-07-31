@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		9649157456A530A6364F1847 /* libPods-repairManagement.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D86A0EE8B99120A4D8A21F /* libPods-repairManagement.a */; };
+		B747ECE322F1663400F5BF02 /* REStatusReq.m in Sources */ = {isa = PBXBuildFile; fileRef = B747ECE222F1663400F5BF02 /* REStatusReq.m */; };
+		B747ECEB22F17B7F00F5BF02 /* REMissionCompleteConfirmController.m in Sources */ = {isa = PBXBuildFile; fileRef = B747ECEA22F17B7F00F5BF02 /* REMissionCompleteConfirmController.m */; };
+		B747ECED22F17BB600F5BF02 /* REMissionCompleteConfirmController.xml in Resources */ = {isa = PBXBuildFile; fileRef = B747ECEC22F17BB600F5BF02 /* REMissionCompleteConfirmController.xml */; };
+		B747ECF122F17C0A00F5BF02 /* completeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B747ECF022F17C0A00F5BF02 /* completeViewModel.m */; };
+		B747ECF522F17C3800F5BF02 /* REResultLibReq.m in Sources */ = {isa = PBXBuildFile; fileRef = B747ECF422F17C3800F5BF02 /* REResultLibReq.m */; };
+		B747ECFA22F193C100F5BF02 /* REMissionAccesoryViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = B747ECF822F193C100F5BF02 /* REMissionAccesoryViewController.xml */; };
+		B747ECFB22F193C100F5BF02 /* REMissionAccesoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B747ECF922F193C100F5BF02 /* REMissionAccesoryViewController.m */; };
+		B747ED0022F195F600F5BF02 /* REAccesoryCell.xml in Resources */ = {isa = PBXBuildFile; fileRef = B747ECFE22F195F600F5BF02 /* REAccesoryCell.xml */; };
+		B747ED0122F195F600F5BF02 /* REAccesoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B747ECFF22F195F600F5BF02 /* REAccesoryCell.m */; };
 		B753894022DF2EF70038CFB6 /* RMRepairDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B753893F22DF2EF70038CFB6 /* RMRepairDetailModel.m */; };
 		B753894422DF33130038CFB6 /* RMRepairDetailReq.m in Sources */ = {isa = PBXBuildFile; fileRef = B753894322DF33130038CFB6 /* RMRepairDetailReq.m */; };
 		B75940C922DDD17D00C19FF8 /* orderListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B75940C822DDD17D00C19FF8 /* orderListViewModel.m */; };
@@ -84,6 +93,21 @@
 
 /* Begin PBXFileReference section */
 		54D86A0EE8B99120A4D8A21F /* libPods-repairManagement.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-repairManagement.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B747ECE122F1663400F5BF02 /* REStatusReq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REStatusReq.h; sourceTree = "<group>"; };
+		B747ECE222F1663400F5BF02 /* REStatusReq.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REStatusReq.m; sourceTree = "<group>"; };
+		B747ECE922F17B7F00F5BF02 /* REMissionCompleteConfirmController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REMissionCompleteConfirmController.h; sourceTree = "<group>"; };
+		B747ECEA22F17B7F00F5BF02 /* REMissionCompleteConfirmController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REMissionCompleteConfirmController.m; sourceTree = "<group>"; };
+		B747ECEC22F17BB600F5BF02 /* REMissionCompleteConfirmController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = REMissionCompleteConfirmController.xml; sourceTree = "<group>"; };
+		B747ECEF22F17C0A00F5BF02 /* completeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = completeViewModel.h; sourceTree = "<group>"; };
+		B747ECF022F17C0A00F5BF02 /* completeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = completeViewModel.m; sourceTree = "<group>"; };
+		B747ECF322F17C3800F5BF02 /* REResultLibReq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REResultLibReq.h; sourceTree = "<group>"; };
+		B747ECF422F17C3800F5BF02 /* REResultLibReq.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REResultLibReq.m; sourceTree = "<group>"; };
+		B747ECF722F193C100F5BF02 /* REMissionAccesoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REMissionAccesoryViewController.h; sourceTree = "<group>"; };
+		B747ECF822F193C100F5BF02 /* REMissionAccesoryViewController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = REMissionAccesoryViewController.xml; sourceTree = "<group>"; };
+		B747ECF922F193C100F5BF02 /* REMissionAccesoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REMissionAccesoryViewController.m; sourceTree = "<group>"; };
+		B747ECFD22F195F600F5BF02 /* REAccesoryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REAccesoryCell.h; sourceTree = "<group>"; };
+		B747ECFE22F195F600F5BF02 /* REAccesoryCell.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = REAccesoryCell.xml; sourceTree = "<group>"; };
+		B747ECFF22F195F600F5BF02 /* REAccesoryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REAccesoryCell.m; sourceTree = "<group>"; };
 		B753893E22DF2EF70038CFB6 /* RMRepairDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMRepairDetailModel.h; sourceTree = "<group>"; };
 		B753893F22DF2EF70038CFB6 /* RMRepairDetailModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMRepairDetailModel.m; sourceTree = "<group>"; };
 		B753894222DF33130038CFB6 /* RMRepairDetailReq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMRepairDetailReq.h; sourceTree = "<group>"; };
@@ -230,6 +254,65 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B747ECE022F165F200F5BF02 /* ChangeStatus */ = {
+			isa = PBXGroup;
+			children = (
+				B747ECE122F1663400F5BF02 /* REStatusReq.h */,
+				B747ECE222F1663400F5BF02 /* REStatusReq.m */,
+			);
+			path = ChangeStatus;
+			sourceTree = "<group>";
+		};
+		B747ECE822F17B4200F5BF02 /* FinishConfirm */ = {
+			isa = PBXGroup;
+			children = (
+				B747ECEE22F17BF100F5BF02 /* viewModel */,
+				B747ECE922F17B7F00F5BF02 /* REMissionCompleteConfirmController.h */,
+				B747ECEC22F17BB600F5BF02 /* REMissionCompleteConfirmController.xml */,
+				B747ECEA22F17B7F00F5BF02 /* REMissionCompleteConfirmController.m */,
+			);
+			path = FinishConfirm;
+			sourceTree = "<group>";
+		};
+		B747ECEE22F17BF100F5BF02 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B747ECEF22F17C0A00F5BF02 /* completeViewModel.h */,
+				B747ECF022F17C0A00F5BF02 /* completeViewModel.m */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		B747ECF222F17C1F00F5BF02 /* ResultLib */ = {
+			isa = PBXGroup;
+			children = (
+				B747ECF322F17C3800F5BF02 /* REResultLibReq.h */,
+				B747ECF422F17C3800F5BF02 /* REResultLibReq.m */,
+			);
+			path = ResultLib;
+			sourceTree = "<group>";
+		};
+		B747ECF622F1928300F5BF02 /* ChangeAccessory */ = {
+			isa = PBXGroup;
+			children = (
+				B747ECFC22F195D800F5BF02 /* cell */,
+				B747ECF722F193C100F5BF02 /* REMissionAccesoryViewController.h */,
+				B747ECF822F193C100F5BF02 /* REMissionAccesoryViewController.xml */,
+				B747ECF922F193C100F5BF02 /* REMissionAccesoryViewController.m */,
+			);
+			path = ChangeAccessory;
+			sourceTree = "<group>";
+		};
+		B747ECFC22F195D800F5BF02 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				B747ECFD22F195F600F5BF02 /* REAccesoryCell.h */,
+				B747ECFE22F195F600F5BF02 /* REAccesoryCell.xml */,
+				B747ECFF22F195F600F5BF02 /* REAccesoryCell.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		B753893C22DF2E5B0038CFB6 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +396,8 @@
 		B75ED96022D6DE2200D305D9 /* MissionHall */ = {
 			isa = PBXGroup;
 			children = (
+				B747ECF622F1928300F5BF02 /* ChangeAccessory */,
+				B747ECE822F17B4200F5BF02 /* FinishConfirm */,
 				B783805122EFEFB500166731 /* Detail */,
 				B783804822EEE15D00166731 /* viewModel */,
 				B783803C22EED87000166731 /* missionTable */,
@@ -498,8 +583,10 @@
 		B783804D22EEE27000166731 /* Engineer */ = {
 			isa = PBXGroup;
 			children = (
-				B783805C22F01A1000166731 /* RMMissionDetailReq */,
+				B747ECF222F17C1F00F5BF02 /* ResultLib */,
 				B783805822F0195B00166731 /* TakeOrder */,
+				B747ECE022F165F200F5BF02 /* ChangeStatus */,
+				B783805C22F01A1000166731 /* RMMissionDetailReq */,
 				B783805722F0191D00166731 /* MissionList */,
 			);
 			path = Engineer;
@@ -762,9 +849,11 @@
 				B75ED98F22D70CC800D305D9 /* RMUserViewController.xml in Resources */,
 				B783805522EFEFD200166731 /* REMissionDetailViewController.xml in Resources */,
 				B7CAD2E222D82B170069FC67 /* RMOrderCell.xml in Resources */,
+				B747ECFA22F193C100F5BF02 /* REMissionAccesoryViewController.xml in Resources */,
 				B783803522EECD8200166731 /* REMyMissionViewController.xml in Resources */,
 				B75ED99622D70DFF00D305D9 /* RMLoginViewController.xml in Resources */,
 				B783804522EEDBCD00166731 /* REMissonTable.xml in Resources */,
+				B747ED0022F195F600F5BF02 /* REAccesoryCell.xml in Resources */,
 				B784B9A422D5B92600EAB7F5 /* LaunchScreen.storyboard in Resources */,
 				B784B9A122D5B92600EAB7F5 /* Assets.xcassets in Resources */,
 				B75ED98B22D70BCA00D305D9 /* TYSPNaviBar.xml in Resources */,
@@ -773,6 +862,7 @@
 				B783804622EEDBCD00166731 /* REMissionCell.xml in Resources */,
 				B783803022EECD1000166731 /* REMissionHallViewController.xml in Resources */,
 				B75940D122DDDFC800C19FF8 /* RMOrderDetailViewController.xml in Resources */,
+				B747ECED22F17BB600F5BF02 /* REMissionCompleteConfirmController.xml in Resources */,
 				B784B99C22D5B92200EAB7F5 /* Main.storyboard in Resources */,
 				B7CAD2E522D82C180069FC67 /* RMOrderTable.xml in Resources */,
 			);
@@ -848,14 +938,19 @@
 				B783804422EEDBCD00166731 /* REMissionCell.m in Sources */,
 				B7CAD2E322D82B170069FC67 /* RMOrderCell.m in Sources */,
 				B75ED99E22D72B2100D305D9 /* RMLoginRequest.m in Sources */,
+				B747ED0122F195F600F5BF02 /* REAccesoryCell.m in Sources */,
 				B75940C922DDD17D00C19FF8 /* orderListViewModel.m in Sources */,
 				B75ED98022D6EAC100D305D9 /* FlexBaseWithoutNaviViewController.m in Sources */,
 				B75ED96922D6E9FA00D305D9 /* RMOrderListViewController.m in Sources */,
 				B753894022DF2EF70038CFB6 /* RMRepairDetailModel.m in Sources */,
+				B747ECEB22F17B7F00F5BF02 /* REMissionCompleteConfirmController.m in Sources */,
 				B75ED99022D70CC800D305D9 /* RMUserViewController.m in Sources */,
 				B784B9D122D5EFFB00EAB7F5 /* stationTabController.m in Sources */,
 				B75940CD22DDD24000C19FF8 /* RMOrderListReq.m in Sources */,
 				B75ED98122D6EAC100D305D9 /* tools.m in Sources */,
+				B747ECF522F17C3800F5BF02 /* REResultLibReq.m in Sources */,
+				B747ECFB22F193C100F5BF02 /* REMissionAccesoryViewController.m in Sources */,
+				B747ECF122F17C0A00F5BF02 /* completeViewModel.m in Sources */,
 				B783804722EEDBCD00166731 /* REMissonTable.m in Sources */,
 				B784B99F22D5B92200EAB7F5 /* repairManagement.xcdatamodeld in Sources */,
 				B783805022EEE29100166731 /* REMissionHallReq.m in Sources */,
@@ -863,6 +958,7 @@
 				B75ED99722D70DFF00D305D9 /* RMLoginViewController.m in Sources */,
 				B784B99922D5B92100EAB7F5 /* ViewController.m in Sources */,
 				B783803622EECD8200166731 /* REMyMissionViewController.m in Sources */,
+				B747ECE322F1663400F5BF02 /* REStatusReq.m in Sources */,
 				B753894422DF33130038CFB6 /* RMRepairDetailReq.m in Sources */,
 				B783805F22F01A2E00166731 /* RMMissionDetailReq.m in Sources */,
 				B75940D222DDDFC800C19FF8 /* RMOrderDetailViewController.m in Sources */,

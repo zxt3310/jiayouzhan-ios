@@ -47,6 +47,18 @@
     };
 }
 
+- (void)arriveStation:(NSString *)order_numb{
+    REStatusReq *req = [[REStatusReq alloc] initWithOrder:order_numb Status:RMOrderStatusArive Result:nil];
+    [req startRequest];
+    
+    __weak typeof(self) weakSelf = self;
+    req.res = ^{
+        if (weakSelf.delegate) {
+            [weakSelf.delegate viewModelDidArriveStation:order_numb];
+        }
+    };
+}
+
 - (void)makeCall:(NSString *)phone{
     NSString *open = [NSString stringWithFormat:@"telprompt://%@",phone];
     

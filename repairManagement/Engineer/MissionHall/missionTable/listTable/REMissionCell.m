@@ -45,6 +45,8 @@
         _takeBtn.backgroundColor = colorFromString(@"#909090", nil);
         _takeBtn.userInteractionEnabled = NO;
     }
+    
+    _takeBtn.hidden = order.status == RMOrderStatusWait?NO:YES;
 }
 
 - (void)takeOrder{
