@@ -11,6 +11,6 @@
 @implementation RMUserViewController
 
 - (void)viewDidLoad{
-    
+    [super viewDidLoad];
 }
 @end

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UIView layout="flex:1" attr="bgColor:white">
+    <UIView layout="flexDirection:row,padding:10/20/10/20,justifyContent:space-between" attr="">
+        <UILabel name="" layout="" attr="fontSize:14,color:#333333,text:配件选择"/>
+        <FlexTouchView onPress="" layout="" attr="">
+            <UILabel name="" layout="" attr="fontSize:14,color:#333333,text:确认"/>
+        </FlexTouchView>
+    </UIView>
+
+    <UIView layout="height:1" attr="bgColor:#F1F1F1"/>
+
+    <UIView layout="padding:10" attr="">
+        <UILabel name="" layout="" attr="fontSize:14,color:#333333,text:请选择"/>
+    </UIView>
+</UIView>

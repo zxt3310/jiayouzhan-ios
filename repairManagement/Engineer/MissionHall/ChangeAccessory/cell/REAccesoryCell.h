@@ -8,7 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol accCellDelegate <NSObject>
+@optional
+
+- (void)didCellRemoveFromSuperView;
+
+@end
+
 @interface REAccesoryCell : FlexCustomBaseView
+
+@property (weak) id <accCellDelegate> delegate;
+
+@property (nonatomic) NSString *title;
 
 @end
 

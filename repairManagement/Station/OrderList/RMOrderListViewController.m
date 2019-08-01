@@ -27,7 +27,7 @@
     return self;
 }
 - (void)viewDidLoad{
-    
+    [super viewDidLoad];
     self.view.backgroundColor = colorFromString(@"#f2f7f8", nil);
     
     orderTable = [[RMOrderTable alloc] init];

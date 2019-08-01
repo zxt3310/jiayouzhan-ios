@@ -1,40 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<UIView layout="padding:10" attr="">
-    <UIView layout="paddingLeft:10,paddingRight:10" attr="bgColor:white">
-        <UIView layout="" attr="borderColor:#e1e9ea,borderWidth:1,borderRadius:5">
-            <UIView layout="flexDirection:row" attr="">
-                <UIImageView layout="width:5,height:22" attr="source:tag"/>
-                <UILabel name="" layout="" attr="fontSize:14,color:#333333,text:配件"/>
+<UIView layout="padding:10,paddingBottom:0" attr="">
+    <UIView layout="padding:10" attr="bgColor:white,borderColor:#e1e9ea,borderWidth:1,borderRadius:5">
+        <UIView layout="" attr="">
+            <UIView layout="flexDirection:row,justifyContent:space-between" attr="">
+                <UIView layout="flexDirection:row" attr="">
+                    <UIImageView layout="width:5,height:22" attr="source:tag_green"/>
+                    <UILabel name="_titleLb" layout="marginLeft:5" attr="fontSize:14,color:#333333,text:配件1"/>
+                </UIView>
+                <FlexTouchView onPress="remove" layout="" attr="">
+                    <UILabel name="" layout="" attr="fontSize:14,color:red,text:删除"/>
+                </FlexTouchView>
             </UIView>
 
-            <UIView layout="flexDirection:row,alignItems:center" attr="">
+            <UIView layout="flexDirection:row,alignItems:center,marginTop:20" attr="">
                 <UILabel name="" layout="" attr="fontSize:14,color:#333333,text:配件"/>
-                <FlexTouchView onPress="" layout="padding:10,marginLeft:25,flexDirection:row,justifyContent:space-between" attr="bgColor:#f8f8f8y">
+                <FlexTouchView onPress="" layout="flex:1,padding:10,marginLeft:25,flexDirection:row,justifyContent:space-between" attr="bgColor:#f8f8f8,borderColor:#e6e6e6,borderWidth:1">
                     <UILabel name="" layout="" attr="fontSize:14,color:#333333,text:请选择"/>
                     <UIImageView layout="width:20,height:20" attr="source:down"/>
                 </FlexTouchView>
             </UIView>
             
-            <UIView layout="flexDirection:row,alignItems:center" attr="">
+            <UIView layout="flexDirection:row,alignItems:center,marginTop:20" attr="">
                 <UILabel name="" layout="" attr="fontSize:14,color:#333333,text:数量"/>
-                <FlexTouchView onPress="" layout="padding:10,marginLeft:25,flexDirection:row,justifyContent:space-between" attr="bgColor:#f8f8f8y">
-                    <UITextField name="" layout="" attr="fontSize:14,color:black,textAlign:left,placeholder:请输入,text:"/>
-                    <UIImageView layout="width:20,height:20" attr="source:down"/>
+                <FlexTouchView onPress="" layout="flex:1,padding:10,marginLeft:25" attr="bgColor:#f8f8f8,borderColor:#e6e6e6,borderWidth:1">
+                    <UITextField name="" layout="" attr="fontSize:14,color:black,textAlign:left,placeholder:请输入,returnKeyType:done,enablesReturnKeyAutomatically:true,keyboardType:numberPad,text:"/>
                 </FlexTouchView>
             </UIView>
 
-            <UIView layout="flexDirection:row,alignItems:center" attr="">
+            <UIView layout="flexDirection:row,alignItems:center,marginTop:20" attr="">
                 <UILabel name="" layout="" attr="fontSize:14,color:#333333,text:状态"/>
-                <UIView layout="flexDirection:row,justifyContent:space-between" attr="">
-                    <UIView layout="width:76,height:30,justifyContent:center,alignItems:center" attr="bgColor:lightGray">
+                <UIView name="_chooseView" layout="flex:1,marginLeft:25,flexDirection:row,justifyContent:space-between" attr="">
+                    <UIView onPress="chooseFix:" layout="width:76,height:30,justifyContent:center,alignItems:center" attr="bgColor:lightGray,tag:1">
                         <UILabel name="" layout="" attr="fontSize:14,color:white,text:维修"/>
                     </UIView>
 
-                    <UIView layout="width:76,height:30,justifyContent:center,alignItems:center" attr="bgColor:lightGray">
+                    <UIView onPress="chooseFix:" layout="width:76,height:30,justifyContent:center,alignItems:center" attr="bgColor:lightGray,tag:2">
                         <UILabel name="" layout="" attr="fontSize:14,color:white,text:更换"/>
                     </UIView>
 
-                    <UIView layout="width:76,height:30,justifyContent:center,alignItems:center" attr="bgColor:lightGray">
+                    <UIView onPress="chooseFix:" layout="width:76,height:30,justifyContent:center,alignItems:center" attr="bgColor:lightGray,tag:3">
                         <UILabel name="" layout="" attr="fontSize:14,color:white,text:报废"/>
                     </UIView>
                 </UIView>

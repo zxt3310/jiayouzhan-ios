@@ -39,6 +39,12 @@
 		B75ED99722D70DFF00D305D9 /* RMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B75ED99522D70DFF00D305D9 /* RMLoginViewController.m */; };
 		B75ED99A22D7256000D305D9 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B75ED99922D7256000D305D9 /* LoginViewModel.m */; };
 		B75ED99E22D72B2100D305D9 /* RMLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B75ED99D22D72B2100D305D9 /* RMLoginRequest.m */; };
+		B75F6D1322F2DBAC004BD542 /* REAccModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B75F6D1222F2DBAC004BD542 /* REAccModel.m */; };
+		B75F6D1622F2E37D004BD542 /* FlexScrollVIew+TouchEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = B75F6D1522F2E37D004BD542 /* FlexScrollVIew+TouchEvent.m */; };
+		B75F6D1B22F2E954004BD542 /* REAccPicker.xml in Resources */ = {isa = PBXBuildFile; fileRef = B75F6D1922F2E954004BD542 /* REAccPicker.xml */; };
+		B75F6D1C22F2E954004BD542 /* REAccPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = B75F6D1A22F2E954004BD542 /* REAccPicker.m */; };
+		B75F6D2022F2F6B0004BD542 /* REAccTable.xml in Resources */ = {isa = PBXBuildFile; fileRef = B75F6D1E22F2F6B0004BD542 /* REAccTable.xml */; };
+		B75F6D2122F2F6B0004BD542 /* REAccTable.m in Sources */ = {isa = PBXBuildFile; fileRef = B75F6D1F22F2F6B0004BD542 /* REAccTable.m */; };
 		B783802A22EE982300166731 /* RMRepairDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B783802922EE982300166731 /* RMRepairDetailViewModel.m */; };
 		B783803022EECD1000166731 /* REMissionHallViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = B783802E22EECD1000166731 /* REMissionHallViewController.xml */; };
 		B783803122EECD1000166731 /* REMissionHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B783802F22EECD1000166731 /* REMissionHallViewController.m */; };
@@ -148,6 +154,16 @@
 		B75ED99922D7256000D305D9 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		B75ED99C22D72B2100D305D9 /* RMLoginRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMLoginRequest.h; sourceTree = "<group>"; };
 		B75ED99D22D72B2100D305D9 /* RMLoginRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMLoginRequest.m; sourceTree = "<group>"; };
+		B75F6D1122F2DBAC004BD542 /* REAccModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REAccModel.h; sourceTree = "<group>"; };
+		B75F6D1222F2DBAC004BD542 /* REAccModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REAccModel.m; sourceTree = "<group>"; };
+		B75F6D1422F2E37D004BD542 /* FlexScrollVIew+TouchEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlexScrollVIew+TouchEvent.h"; sourceTree = "<group>"; };
+		B75F6D1522F2E37D004BD542 /* FlexScrollVIew+TouchEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FlexScrollVIew+TouchEvent.m"; sourceTree = "<group>"; };
+		B75F6D1822F2E954004BD542 /* REAccPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REAccPicker.h; sourceTree = "<group>"; };
+		B75F6D1922F2E954004BD542 /* REAccPicker.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = REAccPicker.xml; sourceTree = "<group>"; };
+		B75F6D1A22F2E954004BD542 /* REAccPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REAccPicker.m; sourceTree = "<group>"; };
+		B75F6D1D22F2F6B0004BD542 /* REAccTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REAccTable.h; sourceTree = "<group>"; };
+		B75F6D1E22F2F6B0004BD542 /* REAccTable.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = REAccTable.xml; sourceTree = "<group>"; };
+		B75F6D1F22F2F6B0004BD542 /* REAccTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REAccTable.m; sourceTree = "<group>"; };
 		B783802822EE982300166731 /* RMRepairDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMRepairDetailViewModel.h; sourceTree = "<group>"; };
 		B783802922EE982300166731 /* RMRepairDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMRepairDetailViewModel.m; sourceTree = "<group>"; };
 		B783802D22EECD0F00166731 /* REMissionHallViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REMissionHallViewController.h; sourceTree = "<group>"; };
@@ -295,6 +311,7 @@
 		B747ECF622F1928300F5BF02 /* ChangeAccessory */ = {
 			isa = PBXGroup;
 			children = (
+				B75F6D1722F2E91B004BD542 /* Picker */,
 				B747ECFC22F195D800F5BF02 /* cell */,
 				B747ECF722F193C100F5BF02 /* REMissionAccesoryViewController.h */,
 				B747ECF822F193C100F5BF02 /* REMissionAccesoryViewController.xml */,
@@ -306,6 +323,7 @@
 		B747ECFC22F195D800F5BF02 /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				B75F6D1022F2DB8F004BD542 /* model */,
 				B747ECFD22F195F600F5BF02 /* REAccesoryCell.h */,
 				B747ECFE22F195F600F5BF02 /* REAccesoryCell.xml */,
 				B747ECFF22F195F600F5BF02 /* REAccesoryCell.m */,
@@ -452,6 +470,8 @@
 				B75ED97B22D6EAC100D305D9 /* tools.h */,
 				B75ED97622D6EAC100D305D9 /* tools.m */,
 				B75ED97A22D6EAC100D305D9 /* UIDefine.h */,
+				B75F6D1422F2E37D004BD542 /* FlexScrollVIew+TouchEvent.h */,
+				B75F6D1522F2E37D004BD542 /* FlexScrollVIew+TouchEvent.m */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -518,6 +538,28 @@
 				B75ED99D22D72B2100D305D9 /* RMLoginRequest.m */,
 			);
 			path = RMLoginReqest;
+			sourceTree = "<group>";
+		};
+		B75F6D1022F2DB8F004BD542 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B75F6D1122F2DBAC004BD542 /* REAccModel.h */,
+				B75F6D1222F2DBAC004BD542 /* REAccModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B75F6D1722F2E91B004BD542 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				B75F6D1822F2E954004BD542 /* REAccPicker.h */,
+				B75F6D1922F2E954004BD542 /* REAccPicker.xml */,
+				B75F6D1A22F2E954004BD542 /* REAccPicker.m */,
+				B75F6D1D22F2F6B0004BD542 /* REAccTable.h */,
+				B75F6D1E22F2F6B0004BD542 /* REAccTable.xml */,
+				B75F6D1F22F2F6B0004BD542 /* REAccTable.m */,
+			);
+			path = Picker;
 			sourceTree = "<group>";
 		};
 		B783802B22EECC8800166731 /* MyMission */ = {
@@ -852,11 +894,13 @@
 				B747ECFA22F193C100F5BF02 /* REMissionAccesoryViewController.xml in Resources */,
 				B783803522EECD8200166731 /* REMyMissionViewController.xml in Resources */,
 				B75ED99622D70DFF00D305D9 /* RMLoginViewController.xml in Resources */,
+				B75F6D1B22F2E954004BD542 /* REAccPicker.xml in Resources */,
 				B783804522EEDBCD00166731 /* REMissonTable.xml in Resources */,
 				B747ED0022F195F600F5BF02 /* REAccesoryCell.xml in Resources */,
 				B784B9A422D5B92600EAB7F5 /* LaunchScreen.storyboard in Resources */,
 				B784B9A122D5B92600EAB7F5 /* Assets.xcassets in Resources */,
 				B75ED98B22D70BCA00D305D9 /* TYSPNaviBar.xml in Resources */,
+				B75F6D2022F2F6B0004BD542 /* REAccTable.xml in Resources */,
 				B75ED96822D6E9FA00D305D9 /* RMOrderListViewController.xml in Resources */,
 				B783803A22EECDAE00166731 /* REUserViewController.xml in Resources */,
 				B783804622EEDBCD00166731 /* REMissionCell.xml in Resources */,
@@ -934,6 +978,7 @@
 				B783803B22EECDAE00166731 /* REUserViewController.m in Sources */,
 				B783803122EECD1000166731 /* REMissionHallViewController.m in Sources */,
 				B75ED99A22D7256000D305D9 /* LoginViewModel.m in Sources */,
+				B75F6D2122F2F6B0004BD542 /* REAccTable.m in Sources */,
 				B783805B22F01A0B00166731 /* RETakeOrderReq.m in Sources */,
 				B783804422EEDBCD00166731 /* REMissionCell.m in Sources */,
 				B7CAD2E322D82B170069FC67 /* RMOrderCell.m in Sources */,
@@ -946,6 +991,7 @@
 				B747ECEB22F17B7F00F5BF02 /* REMissionCompleteConfirmController.m in Sources */,
 				B75ED99022D70CC800D305D9 /* RMUserViewController.m in Sources */,
 				B784B9D122D5EFFB00EAB7F5 /* stationTabController.m in Sources */,
+				B75F6D1C22F2E954004BD542 /* REAccPicker.m in Sources */,
 				B75940CD22DDD24000C19FF8 /* RMOrderListReq.m in Sources */,
 				B75ED98122D6EAC100D305D9 /* tools.m in Sources */,
 				B747ECF522F17C3800F5BF02 /* REResultLibReq.m in Sources */,
@@ -954,6 +1000,7 @@
 				B783804722EEDBCD00166731 /* REMissonTable.m in Sources */,
 				B784B99F22D5B92200EAB7F5 /* repairManagement.xcdatamodeld in Sources */,
 				B783805022EEE29100166731 /* REMissionHallReq.m in Sources */,
+				B75F6D1622F2E37D004BD542 /* FlexScrollVIew+TouchEvent.m in Sources */,
 				B75ED97E22D6EAC100D305D9 /* FlexBaseWithNaviViewController.m in Sources */,
 				B75ED99722D70DFF00D305D9 /* RMLoginViewController.m in Sources */,
 				B784B99922D5B92100EAB7F5 /* ViewController.m in Sources */,
@@ -972,6 +1019,7 @@
 				B784B99622D5B92100EAB7F5 /* AppDelegate.m in Sources */,
 				B783805622EFEFD200166731 /* REMissionDetailViewController.m in Sources */,
 				B75ED98A22D70BCA00D305D9 /* TYSPNaviBar.m in Sources */,
+				B75F6D1322F2DBAC004BD542 /* REAccModel.m in Sources */,
 				B75ED98222D6EAC100D305D9 /* TYCommonRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

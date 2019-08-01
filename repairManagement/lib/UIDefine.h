@@ -24,6 +24,12 @@ typedef enum : NSUInteger {
     RMRoleEnginner = 1
 } RMRole;
 
+typedef enum : NSUInteger {
+    REAcTypeFix = 1,
+    REAcTypeChange = 2,
+    REAcTypeAbandon = 3
+} REAcType;
+
 //NSString *const RMOrderWaitTag = @"待接单";
 //NSString *const RMOrderTakeTag = @"已接单";
 //NSString *const RMOrderAriveTag = @"到达加油站";
