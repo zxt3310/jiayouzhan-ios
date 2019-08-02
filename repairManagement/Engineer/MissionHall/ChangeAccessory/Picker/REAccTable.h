@@ -7,11 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "REAccModel.h"
+
+@protocol accTableDelegate <NSObject>
+
+@optional
+- (void)tableDidSelectAtIndex:(NSInteger) idx SelStr:(NSString *)name SelValue:(NSInteger) value;
+@end
 
 @interface REAccTable : FlexCustomBaseView <UITableViewDataSource,UITableViewDelegate>
-
-@property NSArray *accAry;
-
+@property (weak) id<accTableDelegate> selectDelegate;
+@property NSArray <REAcc *> *accAry;
+- (void)reload;
 @end
 
 

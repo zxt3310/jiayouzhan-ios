@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "FlexBaseWithNaviViewController.h"
 @interface REMissionAccesoryViewController : FlexBaseWithNaviViewController
-
+@property NSString *repairNum;
+@property RMOrderStatus status;
 @end
 
 

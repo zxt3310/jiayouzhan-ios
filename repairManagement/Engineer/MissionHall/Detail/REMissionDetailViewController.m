@@ -30,10 +30,14 @@
     FlexTouchView *_takeBtn;
     FlexTouchView *_ariveBtn;
     UIView *_operateView;
+    UIView *_accView;
+    UILabel *_applyLb;
     
     NSString *phoneStr;
     double lat;
     double lon;
+    
+    RMOrderStatus status;
 }
 
 - (void)viewDidLoad{
@@ -75,6 +79,12 @@
     if (order.status >= RMOrderStatusFinish) {
         _operateView.hidden = YES;
     }
+    
+    if (order.access_mgmt > 0) {
+        _accView.hidden = NO;
+        _applyLb.text = order.repair_num;
+    }
+    
 }
 //接单
 - (void)takeOrder{
@@ -87,6 +97,8 @@
 //换件
 - (void)exchange{
     REMissionAccesoryViewController *accVC = [[REMissionAccesoryViewController alloc] init];
+    accVC.repairNum = self.orderNum;
+    accVC.status = status;
     [self.navigationController pushViewController:accVC animated:YES];
 }
 //完成
@@ -98,6 +110,7 @@
 
 #pragma mark delegate call back
 - (void)viewModelDidLoadDetail:(RMRepairDetailModel *)order{
+    status = order.status;
     [self setupOrder:order];
 }
 
@@ -115,10 +128,18 @@
 
 //电话
 - (void)makePhoneCall{
+    if (status == RMOrderStatusWait) {
+        [SVProgressHUD showInfoWithStatus:@"未接单,无法拨打电话"];
+        return;
+    }
     [viewModel makeCall:phoneStr];
 }
 //导航
 - (void)jumpToLocate{
+    if (status == RMOrderStatusWait) {
+        [SVProgressHUD showInfoWithStatus:@"未接单,无法使用导航"];
+        return;
+    }
     UIAlertController *alert = [viewModel preparNavigationWithLat:lat Lon:lon];
     [self presentViewController:alert animated:YES completion:nil];
 }

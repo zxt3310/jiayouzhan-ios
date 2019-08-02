@@ -11,3 +11,12 @@
 @implementation REAccModel
 
 @end
+
+
+@implementation REAcc
+
++(NSDictionary<NSString *,id> *)modelContainerPropertyGenericClass{
+    return @{@"children":[REAcc class]};
+}
+
+@end

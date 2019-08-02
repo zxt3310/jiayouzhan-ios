@@ -19,6 +19,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString *Level3Name;
 @property NSInteger count;
 @property REAcType fixType;
+@property BOOL isNew;
 @end
+
+@interface REAcc : NSObject <YYModel>
+
+@property NSString *label;
+@property NSInteger value;
+@property NSArray <REAcc *> *children;
+
+@end
+
 
 NS_ASSUME_NONNULL_END

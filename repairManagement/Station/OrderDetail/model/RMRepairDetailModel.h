@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property double lat;
 @property double lon;
 @property NSString *publish;
-
+@property NSInteger access_mgmt;
 
 @end
 

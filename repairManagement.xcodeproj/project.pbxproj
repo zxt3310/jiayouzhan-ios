@@ -73,6 +73,10 @@
 		B784B9BC22D5B92600EAB7F5 /* repairManagementUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B784B9BB22D5B92600EAB7F5 /* repairManagementUITests.m */; };
 		B784B9CE22D5EFB800EAB7F5 /* EngineerTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = B784B9CD22D5EFB800EAB7F5 /* EngineerTabController.m */; };
 		B784B9D122D5EFFB00EAB7F5 /* stationTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = B784B9D022D5EFFB00EAB7F5 /* stationTabController.m */; };
+		B7C16EBD22F3D73100E67D87 /* REGetAccReq.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C16EBC22F3D73100E67D87 /* REGetAccReq.m */; };
+		B7C16EC122F3D83100E67D87 /* accChangeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C16EC022F3D83100E67D87 /* accChangeViewModel.m */; };
+		B7C16EC522F4195900E67D87 /* REAccChangeReq.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C16EC422F4195900E67D87 /* REAccChangeReq.m */; };
+		B7C16EC922F430D800E67D87 /* REGetAccessoriesReq.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C16EC822F430D800E67D87 /* REGetAccessoriesReq.m */; };
 		B7CAD2DE22D82B050069FC67 /* RMOrderTable.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CAD2DD22D82B050069FC67 /* RMOrderTable.m */; };
 		B7CAD2E222D82B170069FC67 /* RMOrderCell.xml in Resources */ = {isa = PBXBuildFile; fileRef = B7CAD2E022D82B170069FC67 /* RMOrderCell.xml */; };
 		B7CAD2E322D82B170069FC67 /* RMOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7CAD2E122D82B170069FC67 /* RMOrderCell.m */; };
@@ -213,6 +217,14 @@
 		B784B9CD22D5EFB800EAB7F5 /* EngineerTabController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EngineerTabController.m; sourceTree = "<group>"; };
 		B784B9CF22D5EFFB00EAB7F5 /* stationTabController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stationTabController.h; sourceTree = "<group>"; };
 		B784B9D022D5EFFB00EAB7F5 /* stationTabController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stationTabController.m; sourceTree = "<group>"; };
+		B7C16EBB22F3D73100E67D87 /* REGetAccReq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REGetAccReq.h; sourceTree = "<group>"; };
+		B7C16EBC22F3D73100E67D87 /* REGetAccReq.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REGetAccReq.m; sourceTree = "<group>"; };
+		B7C16EBF22F3D83100E67D87 /* accChangeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = accChangeViewModel.h; sourceTree = "<group>"; };
+		B7C16EC022F3D83100E67D87 /* accChangeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = accChangeViewModel.m; sourceTree = "<group>"; };
+		B7C16EC322F4195900E67D87 /* REAccChangeReq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REAccChangeReq.h; sourceTree = "<group>"; };
+		B7C16EC422F4195900E67D87 /* REAccChangeReq.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REAccChangeReq.m; sourceTree = "<group>"; };
+		B7C16EC722F430D800E67D87 /* REGetAccessoriesReq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REGetAccessoriesReq.h; sourceTree = "<group>"; };
+		B7C16EC822F430D800E67D87 /* REGetAccessoriesReq.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REGetAccessoriesReq.m; sourceTree = "<group>"; };
 		B7CAD2DC22D82B050069FC67 /* RMOrderTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMOrderTable.h; sourceTree = "<group>"; };
 		B7CAD2DD22D82B050069FC67 /* RMOrderTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RMOrderTable.m; sourceTree = "<group>"; };
 		B7CAD2DF22D82B170069FC67 /* RMOrderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RMOrderCell.h; sourceTree = "<group>"; };
@@ -311,6 +323,7 @@
 		B747ECF622F1928300F5BF02 /* ChangeAccessory */ = {
 			isa = PBXGroup;
 			children = (
+				B7C16EBE22F3D81800E67D87 /* viewModel */,
 				B75F6D1722F2E91B004BD542 /* Picker */,
 				B747ECFC22F195D800F5BF02 /* cell */,
 				B747ECF722F193C100F5BF02 /* REMissionAccesoryViewController.h */,
@@ -625,6 +638,9 @@
 		B783804D22EEE27000166731 /* Engineer */ = {
 			isa = PBXGroup;
 			children = (
+				B7C16EC622F430B700E67D87 /* get-accessories */,
+				B7C16EC222F4193D00E67D87 /* changeAcc */,
+				B7C16EBA22F3D70800E67D87 /* GetAcc */,
 				B747ECF222F17C1F00F5BF02 /* ResultLib */,
 				B783805822F0195B00166731 /* TakeOrder */,
 				B747ECE022F165F200F5BF02 /* ChangeStatus */,
@@ -759,6 +775,42 @@
 				B784B9CD22D5EFB800EAB7F5 /* EngineerTabController.m */,
 			);
 			path = EngineerClient;
+			sourceTree = "<group>";
+		};
+		B7C16EBA22F3D70800E67D87 /* GetAcc */ = {
+			isa = PBXGroup;
+			children = (
+				B7C16EBB22F3D73100E67D87 /* REGetAccReq.h */,
+				B7C16EBC22F3D73100E67D87 /* REGetAccReq.m */,
+			);
+			path = GetAcc;
+			sourceTree = "<group>";
+		};
+		B7C16EBE22F3D81800E67D87 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B7C16EBF22F3D83100E67D87 /* accChangeViewModel.h */,
+				B7C16EC022F3D83100E67D87 /* accChangeViewModel.m */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		B7C16EC222F4193D00E67D87 /* changeAcc */ = {
+			isa = PBXGroup;
+			children = (
+				B7C16EC322F4195900E67D87 /* REAccChangeReq.h */,
+				B7C16EC422F4195900E67D87 /* REAccChangeReq.m */,
+			);
+			path = changeAcc;
+			sourceTree = "<group>";
+		};
+		B7C16EC622F430B700E67D87 /* get-accessories */ = {
+			isa = PBXGroup;
+			children = (
+				B7C16EC722F430D800E67D87 /* REGetAccessoriesReq.h */,
+				B7C16EC822F430D800E67D87 /* REGetAccessoriesReq.m */,
+			);
+			path = "get-accessories";
 			sourceTree = "<group>";
 		};
 		B7CAD2DB22D82A950069FC67 /* listTable */ = {
@@ -990,6 +1042,7 @@
 				B753894022DF2EF70038CFB6 /* RMRepairDetailModel.m in Sources */,
 				B747ECEB22F17B7F00F5BF02 /* REMissionCompleteConfirmController.m in Sources */,
 				B75ED99022D70CC800D305D9 /* RMUserViewController.m in Sources */,
+				B7C16EC522F4195900E67D87 /* REAccChangeReq.m in Sources */,
 				B784B9D122D5EFFB00EAB7F5 /* stationTabController.m in Sources */,
 				B75F6D1C22F2E954004BD542 /* REAccPicker.m in Sources */,
 				B75940CD22DDD24000C19FF8 /* RMOrderListReq.m in Sources */,
@@ -999,7 +1052,9 @@
 				B747ECF122F17C0A00F5BF02 /* completeViewModel.m in Sources */,
 				B783804722EEDBCD00166731 /* REMissonTable.m in Sources */,
 				B784B99F22D5B92200EAB7F5 /* repairManagement.xcdatamodeld in Sources */,
+				B7C16EC122F3D83100E67D87 /* accChangeViewModel.m in Sources */,
 				B783805022EEE29100166731 /* REMissionHallReq.m in Sources */,
+				B7C16EC922F430D800E67D87 /* REGetAccessoriesReq.m in Sources */,
 				B75F6D1622F2E37D004BD542 /* FlexScrollVIew+TouchEvent.m in Sources */,
 				B75ED97E22D6EAC100D305D9 /* FlexBaseWithNaviViewController.m in Sources */,
 				B75ED99722D70DFF00D305D9 /* RMLoginViewController.m in Sources */,
@@ -1014,6 +1069,7 @@
 				B784B9A722D5B92600EAB7F5 /* main.m in Sources */,
 				B783804B22EEE18A00166731 /* REMissionHallViewModel.m in Sources */,
 				B75ED97F22D6EAC100D305D9 /* FlexBasePresentViewController.m in Sources */,
+				B7C16EBD22F3D73100E67D87 /* REGetAccReq.m in Sources */,
 				B783802A22EE982300166731 /* RMRepairDetailViewModel.m in Sources */,
 				B7CAD2DE22D82B050069FC67 /* RMOrderTable.m in Sources */,
 				B784B99622D5B92100EAB7F5 /* AppDelegate.m in Sources */,

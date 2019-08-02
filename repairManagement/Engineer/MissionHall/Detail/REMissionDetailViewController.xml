@@ -45,6 +45,25 @@
             </UIView>
         </UIView>
     </UIView>
+    <!-- 关联配件信息 -->
+    <UIView name="_accView" layout="marginTop:13,padding:10" attr="bgColor:white,borderColor:#e1e9ea,borderWidth:1,borderRadius:8,hidden:true">
+        <UIView layout="flexDirection:row" attr="">
+            <UIImageView attr="source:tag_green" layout="marginLeft:3"/>
+            <UILabel name="" layout="marginLeft:5" attr="font:PingFangSC-Medium|14,color:#333333,text:关联配件申请单"/>
+        </UIView>
+
+        <UIView layout="marginTop:14,flexDirection:row" attr="">
+            <UIView layout="width:60,height:20" attr="">
+                <UILabel name="" layout="flex:1" attr="font:PingFangSC-Regular|13,textAlign:center,color:#909090,text:申请编号"/>
+            </UIView>
+            <UIView layout="width:70%,height:20,flexDirection:row" attr="">
+                <UILabel name="_applyLb" layout="flex:1" attr="font:PingFangSC-Regular|13,color:#333333,text:"/>
+                <FlexTouchView onPress="exchange" layout="" attr="">
+                    <UILabel name="" layout="marginLeft:10" attr="fontSize:14,color:#1c713d,text:查看详情"/>
+                </FlexTouchView>
+            </UIView>
+        </UIView>
+    </UIView>
 
     <!-- 加油站信息 -->
 

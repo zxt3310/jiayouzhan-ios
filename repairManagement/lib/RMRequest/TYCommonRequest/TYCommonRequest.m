@@ -50,6 +50,10 @@
         }
     }
 }
+    
+- (YTKRequestMethod)requestMethod{
+    return YTKRequestMethodPOST;
+}
 
 - (YTKRequestSerializerType)requestSerializerType{
     return YTKRequestSerializerTypeHTTP;

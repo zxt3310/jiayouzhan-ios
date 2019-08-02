@@ -2,14 +2,32 @@
 <UIView layout="flex:1" attr="bgColor:white">
     <UIView layout="flexDirection:row,padding:10/20/10/20,justifyContent:space-between" attr="">
         <UILabel name="" layout="" attr="fontSize:14,color:#333333,text:配件选择"/>
-        <FlexTouchView onPress="" layout="" attr="">
+        <FlexTouchView onPress="confirm" layout="" attr="">
             <UILabel name="" layout="" attr="fontSize:14,color:#333333,text:确认"/>
         </FlexTouchView>
     </UIView>
 
     <UIView layout="height:1" attr="bgColor:#F1F1F1"/>
 
-    <UIView layout="padding:10" attr="">
-        <UILabel name="" layout="" attr="fontSize:14,color:#333333,text:请选择"/>
+    <UIView layout="padding:10,flexDirection:row" attr="">
+        <FlexTouchView name="_level1V" onPress="leve1Re" layout="marginLeft:15" attr="">
+            <UILabel name="_name1Lb" layout="" attr="fontSize:14,color:#333333,text:请选择"/>
+            <UIView name="_line1" layout="height:2" attr=""/>
+        </FlexTouchView>
+
+         <FlexTouchView name="_level2V" onPress="leve2Re" layout="marginLeft:15" attr="hidden:true">
+            <UILabel name="_name2Lb" layout="" attr="fontSize:14,color:#333333,text:请选择"/>
+            <UIView name="_line2" layout="height:2" attr=""/>
+        </FlexTouchView>
+
+         <FlexTouchView name="_level3V" onPress="" layout="marginLeft:15" attr="hidden:true">
+            <UILabel name="_name3Lb" layout="" attr="fontSize:14,color:#333333,text:请选择"/>
+            <UIView name="_line3" layout="height:2" attr=""/>
+        </FlexTouchView>
     </UIView>
+
+    <UIView name="_accTable" layout="flex:1,padding:10" attr="">
+
+    </UIView>
+
 </UIView>

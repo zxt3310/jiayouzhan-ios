@@ -7,15 +7,15 @@
                     <UIImageView layout="width:5,height:22" attr="source:tag_green"/>
                     <UILabel name="_titleLb" layout="marginLeft:5" attr="fontSize:14,color:#333333,text:配件1"/>
                 </UIView>
-                <FlexTouchView onPress="remove" layout="" attr="">
+                <FlexTouchView name="_delBtn" onPress="remove" layout="" attr="">
                     <UILabel name="" layout="" attr="fontSize:14,color:red,text:删除"/>
                 </FlexTouchView>
             </UIView>
 
             <UIView layout="flexDirection:row,alignItems:center,marginTop:20" attr="">
                 <UILabel name="" layout="" attr="fontSize:14,color:#333333,text:配件"/>
-                <FlexTouchView onPress="" layout="flex:1,padding:10,marginLeft:25,flexDirection:row,justifyContent:space-between" attr="bgColor:#f8f8f8,borderColor:#e6e6e6,borderWidth:1">
-                    <UILabel name="" layout="" attr="fontSize:14,color:#333333,text:请选择"/>
+                <FlexTouchView name="" onPress="chooseAcc" layout="flex:1,padding:10,marginLeft:25,flexDirection:row,justifyContent:space-between" attr="bgColor:#f8f8f8,borderColor:#e6e6e6,borderWidth:1">
+                    <UILabel name="_chooseLb" layout="" attr="fontSize:14,color:#333333,text:请选择"/>
                     <UIImageView layout="width:20,height:20" attr="source:down"/>
                 </FlexTouchView>
             </UIView>
@@ -23,7 +23,7 @@
             <UIView layout="flexDirection:row,alignItems:center,marginTop:20" attr="">
                 <UILabel name="" layout="" attr="fontSize:14,color:#333333,text:数量"/>
                 <FlexTouchView onPress="" layout="flex:1,padding:10,marginLeft:25" attr="bgColor:#f8f8f8,borderColor:#e6e6e6,borderWidth:1">
-                    <UITextField name="" layout="" attr="fontSize:14,color:black,textAlign:left,placeholder:请输入,returnKeyType:done,enablesReturnKeyAutomatically:true,keyboardType:numberPad,text:"/>
+                    <UITextField name="_countTF" layout="" attr="fontSize:14,color:black,textAlign:left,placeholder:请输入,returnKeyType:done,enablesReturnKeyAutomatically:true,keyboardType:numberPad,text:"/>
                 </FlexTouchView>
             </UIView>
 
